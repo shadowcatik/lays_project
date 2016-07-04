@@ -1,0 +1,150 @@
+@media screen and (max-width: 1960px) {
+  .content-layout {
+    height: 92rem; }
+    .content-layout--first {
+      height: 78.4rem; } }
+
+@media screen and (max-width: 1700px) {
+  .content-layout {
+    height: 71.6rem; }
+    .content-layout--first {
+      height: 65.4rem; } }
+
+@media screen and (max-width: 1450px) {
+  .content-layout {
+    height: 63.6rem; }
+    .content-layout--first {
+      height: 58rem; }
+  .column--right {
+    padding: 2.7rem 2rem 3rem 2.8rem; }
+  .column--right-fourth:after {
+    left: -14.5rem;
+    top: 32%; }
+  .icon--circle {
+    width: 11rem;
+    height: 8.1rem; }
+  .icon--hearth {
+    background-size: 89%;
+    margin: .3rem auto;
+    left: .7rem; }
+  .icon--prize {
+    background: url(../img/prize.png) no-repeat 0.3rem top;
+    background-size: 84%;
+    left: .2rem; }
+  .icon--facebook-layout {
+    width: 8.8rem;
+    height: 7rem;
+    left: 3.5rem;
+    top: 4.6rem; }
+  .icon--facebook-inner {
+    width: 5.4rem;
+    height: 5.4rem;
+    top: .2rem; }
+  .icon--vk-layout {
+    width: 9.9rem;
+    height: 9.7rem;
+    left: 3.2rem; }
+  .icon--vk-inner {
+    width: 5.5rem;
+    height: 5.5rem; }
+  .icon--inst-layout {
+    width: 7.6rem;
+    height: 7.6rem;
+    top: 7rem;
+    right: .3rem; }
+  .icon--inst-inner {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 2.25rem;
+    right: .2rem; }
+  .icon--youtube-footer {
+    width: 3.3rem;
+    height: 3.3rem;
+    bottom: .7rem; }
+  .slide-icon {
+    width: 13rem;
+    margin: 0 2.2rem 0 .8rem; }
+    .slide-icon:nth-of-type(3) {
+      margin: 0 0 0 1.2rem; }
+    .slide-icon--item {
+      font-size: 1.6rem;
+      margin: 14% 0 0 1%; }
+  .slide-icons--second-page {
+    top: 4.3rem;
+    left: 2.3rem; }
+  .animation--circle {
+    top: .4rem;
+    left: 0.2rem; }
+  .title {
+    line-height: 5.4rem; }
+  .title-big {
+    font-size: 8.7rem; }
+    .title-big--layout {
+      width: 33rem; }
+  .title-large {
+    font-size: 7.8rem;
+    letter-spacing: 0; }
+  .title-medium {
+    font-size: 6rem; }
+  .title-middle {
+    font-size: 5.4rem;
+    line-height: 5.7rem; }
+    .title-middle--layout {
+      width: 25.5rem;
+      padding-top: 5.6rem; }
+  .title-small {
+    font-size: 3.9rem;
+    line-height: 5.2rem; }
+    .title-small--layout {
+      top: 38.5%; }
+  .title-little {
+    font-size: 4.9rem; }
+  .arrow {
+    top: 18.4rem;
+    left: 16rem; }
+    .arrow:before {
+      height: 2.9rem;
+      width: 2.9rem; }
+    .arrow:after {
+      height: 5.1rem; }
+  .button {
+    width: 21.5rem;
+    height: 1.5rem;
+    font-size: 2.2rem; }
+  .gallery--item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 18rem;
+        -ms-flex: 1 1 18rem;
+            flex: 1 1 18rem;
+    margin: .1rem 1rem .5rem -.5rem; }
+  .about--layout {
+    padding: 0 0 8.5% 49%; }
+  .about--item:after {
+    right: -9.4rem;
+    top: 27.8%; }
+  .slide-information {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin: 3.35rem 0 0 4rem; }
+  .location {
+    right: -2.8rem;
+    top: 6.6rem;
+    padding-bottom: 4rem;
+    background-size: 89.4%; }
+  .footer {
+    height: 9rem; }
+  .logo--footer {
+    width: 5.86rem;
+    height: 5rem;
+    left: -.65rem;
+    top: -.25rem; }
+  .copyright {
+    font-size: 1.1rem;
+    margin: 5% 0 0; }
+  .social {
+    height: 3.5rem;
+    width: 9rem;
+    padding: 3.55rem 0 2rem; }
+    .social--planet:before {
+      top: 26%;
+      left: 23%; } }

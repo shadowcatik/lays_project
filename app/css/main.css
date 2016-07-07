@@ -157,6 +157,21 @@ html, body {
     background: url(../img/instagram_color.png) no-repeat;
     width: 6rem;
     height: 6rem; }
+    .icon--instagram:hover:before {
+      content: '';
+      width: .6rem;
+      height: .6rem;
+      position: absolute;
+      top: 9px;
+      right: 8px;
+      opacity: 0;
+      background-color: red;
+      border-radius: 5rem;
+      box-shadow: 1px 1px 10px 3px #FF0000;
+      -webkit-animation: flash 0.4s 2 cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
+              animation: flash 0.4s 2 cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
+      -webkit-animation-fill-mode: none;
+              animation-fill-mode: none; }
   .icon--hearth {
     background: url(../img/hearth.png) no-repeat;
     width: 6.7rem;
@@ -227,6 +242,18 @@ html, body {
     left: .19rem; }
     .icon--youtube-footer path {
       fill: #fff; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .menu-item {
   font-size: 1.4rem;
@@ -361,6 +388,20 @@ html, body {
   -webkit-animation-delay: 5s;
           animation-delay: 5s; }
 
+.animated--lens {
+  content: '';
+  width: .6rem;
+  height: .6rem;
+  background-color: #186c98;
+  border-radius: 5rem;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  -webkit-animation: dinamic-lens 0.4s cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
+          animation: dinamic-lens 0.4s cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
 .animation--circle {
   position: relative;
   top: .5rem;
@@ -412,6 +453,22 @@ html, body {
   0% {
     -webkit-transform: none;
             transform: none; } }
+
+@-webkit-keyframes dinamic-lens {
+  0% {
+    width: .5rem;
+    height: .5rem; }
+  100% {
+    width: 1.5rem;
+    height: 1.5rem; } }
+
+@keyframes dinamic-lens {
+  0% {
+    width: .5rem;
+    height: .5rem; }
+  100% {
+    width: 1.5rem;
+    height: 1.5rem; } }
 
 @-webkit-keyframes timing-left {
   0% {

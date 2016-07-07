@@ -173,6 +173,23 @@ html,body
 		width: 6rem
 		height: 6rem
 
+		&:hover
+
+
+			&:before
+				content: ''
+				width: .6rem
+				height: .6rem
+				position: absolute
+				top: 9px
+				right: 8px
+				opacity: 0
+				background-color: red
+				border-radius: 5rem
+				box-shadow: 1px 1px 10px 3px #FF0000
+				animation: flash .4s 2 cubic-bezier(.27,.62,.11,.99) normal
+				animation-fill-mode: none
+
 	&--hearth
 		background: url(../img/hearth.png) no-repeat
 		width: 6.7rem
@@ -252,6 +269,13 @@ html,body
 		& path
 			fill: #fff
 
+@keyframes flash
+   0%
+	   opacity: 0
+
+   100%
+	   opacity: 1
+
 .menu-item
 	font-size: 1.4rem
 	color: #555555
@@ -262,7 +286,6 @@ html,body
 	background-color: #ffda2d
 
 	&--layout
-		//width: 92.2%
 		position: absolute
 		top: 0
 		right: 0
@@ -381,6 +404,18 @@ html,body
     &__delay
 	    animation-delay: 5s
 
+    &--lens
+	    content: ''
+	    width: .6rem
+	    height: .6rem
+	    background-color: #186c98
+	    border-radius: 5rem
+	    position: absolute
+	    right: 20px
+	    top: 15px
+	    animation: dinamic-lens .4s cubic-bezier(.27,.62,.11,.99) normal
+	    animation-fill-mode: forwards
+
 .animation
 
 	&--circle
@@ -415,6 +450,15 @@ html,body
 @keyframes notrasform_background
 	0%
 		transform: none
+
+@keyframes dinamic-lens
+   0%
+	   width: .5rem
+	   height: .5rem
+
+   100%
+	   width: 1.5rem
+	   height: 1.5rem
 
 @keyframes timing-left
    0%
@@ -477,22 +521,11 @@ html,body
 /*Second slide*/
 
 .slide-icons
-	&--first-page
-		//animation: timing 0.5s linear normal 1s
-		//animation-fill-mode: forwards
-		//opacity: 0
 
 	&--second-page
 		width: 34.5rem
 		position: absolute
 		top: 4.9rem
-
-//@keyframes timing
- //  0%
-	//   opacity: 0
-
- //  100%
-	//   opacity: 1
 
 .arrow
 	position: absolute

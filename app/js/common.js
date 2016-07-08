@@ -29,15 +29,6 @@ $(function(){
 		    context.closePath();
 		    context.stroke();
 		    context.fill();
-			//изображение
-		    cellSize = 8,
-		    pic = new Image(),
-		    instagram.width = 8 * cellSize;
-			instagram.height = 8 * cellSize;
-			pic.src = '../img/instagram_color.png';
-			pic.onload = function () {
-			    context.drawImage(pic, 0, 0)
-		    }
 	    }
     }
 });

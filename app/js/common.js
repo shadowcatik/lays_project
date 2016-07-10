@@ -31,4 +31,24 @@ $(function(){
 		    context.fill();
 	    }
     }
+
+    
 });
+//mobile menu
+
+document.getElementById("show-menu").onclick = function() {myFunction()};
+function myFunction() {
+    document.getElementById("menu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.icon--menu')) {
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

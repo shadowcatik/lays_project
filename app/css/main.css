@@ -128,6 +128,8 @@ html, body {
   height: 6.8rem;
   text-align: center;
   padding: 2.5rem 0; }
+  .menu-item-layout:last-of-type {
+    display: none; }
 
 .icon {
   width: 4.6rem;
@@ -143,6 +145,8 @@ html, body {
     display: block;
     position: relative;
     margin: 0 auto; }
+  .icon--menu {
+    display: none; }
   .icon--insta {
     background: url(../img/instagram.png) no-repeat; }
   .icon--box {
@@ -156,7 +160,8 @@ html, body {
   .icon--instagram {
     background: url(../img/instagram_color.png) no-repeat;
     width: 6rem;
-    height: 6rem; }
+    height: 6rem;
+    background-size: 100%; }
     .icon--instagram:after {
       content: '';
       width: .5rem;
@@ -182,17 +187,95 @@ html, body {
               animation: flash 0.4s 2 cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
       -webkit-animation-fill-mode: none;
               animation-fill-mode: none; }
+    .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+      content: '';
+      background-color: #186c98;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 5rem;
+      position: absolute;
+      top: 23px;
+      left: 19px; }
+      .icon--instagram:hover .lens:before, .icon--instagram:hover .flash:before {
+        content: '';
+        width: .3rem;
+        height: .3rem;
+        background-color: #014D6C;
+        position: absolute;
+        top: 8px;
+        left: 9px;
+        border-radius: 5rem; }
+      .icon--instagram:hover .lens:after, .icon--instagram:hover .flash:after {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        background-color: #014D6C;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border-radius: 5rem; }
+    .icon--instagram:hover .flash {
+      width: .3rem;
+      height: .2rem;
+      background-color: #FFF149;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      opacity: 0; }
+      .icon--instagram:hover .flash:after {
+        content: '';
+        width: .5rem;
+        height: .5rem;
+        background-color: #fff8a5;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        border-radius: 5rem;
+        box-shadow: 1px 1px 11px 12px rgba(255, 248, 165, 0.91); }
+    .icon--instagram:hover .animated--flash {
+      -webkit-animation: flash .3s ease-out 1s alternate;
+              animation: flash .3s ease-out 1s alternate; }
+      .icon--instagram:hover .animated--flash:after {
+        -webkit-animation: flash .3s ease-out 1.2s alternate;
+                animation: flash .3s ease-out 1.2s alternate; }
+    .icon--instagram:hover .animated--lens {
+      -webkit-animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
+              animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-transform: scale3d(0, 0, 1);
+              transform: scale3d(0, 0, 1); }
+      .icon--instagram:hover .animated--lens:after {
+        -webkit-animation: notrasform-lens .1s ease-out 1.3s;
+                animation: notrasform-lens .1s ease-out 1.3s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-transform: scale3d(0, 0, 1);
+                transform: scale3d(0, 0, 1); }
   .icon--hearth {
     background: url(../img/hearth.png) no-repeat;
     width: 6.7rem;
     height: 6.5rem;
     margin: .7rem auto; }
+    .icon--hearth:hover {
+      -webkit-animation: background .8s linear alternate;
+              animation: background .8s linear alternate;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
   .icon--prize {
     background: url(../img/prize.png) no-repeat 0.3rem top;
     width: 6.5rem;
     height: 6.8rem;
     bottom: .6rem;
-    right: .2rem; }
+    right: .2rem;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out; }
+    .icon--prize:hover {
+      -webkit-animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
+              animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
   .icon--circle {
     width: 12.4rem;
     height: 9.6rem;
@@ -252,18 +335,6 @@ html, body {
     left: .19rem; }
     .icon--youtube-footer path {
       fill: #fff; }
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes flash {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .menu-item {
   font-size: 1.4rem;
@@ -398,36 +469,6 @@ html, body {
   -webkit-animation-delay: 5s;
           animation-delay: 5s; }
 
-.animated--lens:hover {
-  -webkit-animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
-          animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-transform: scale3d(0, 0, 1);
-          transform: scale3d(0, 0, 1); }
-  .animated--lens:hover:after {
-    content: '';
-    width: .3rem;
-    height: .3rem;
-    background-color: #014D6C;
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    border-radius: 5rem; }
-
-.lens {
-  width: 100%;
-  height: 100%; }
-  .lens:hover {
-    content: '';
-    background-color: #186c98;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 5rem;
-    position: absolute;
-    top: 23px;
-    left: 19px; }
-
 .animation--circle {
   position: relative;
   top: .5rem;
@@ -459,6 +500,66 @@ html, body {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes background {
+  30% {
+    background: url(../img/hearth_left.png) no-repeat;
+    width: 6.7rem;
+    height: 5.6rem; }
+  80% {
+    background: url(../img/hearth_right.png) no-repeat;
+    width: 6.7rem;
+    height: 5.6rem; } }
+
+@keyframes background {
+  30% {
+    background: url(../img/hearth_left.png) no-repeat;
+    width: 6.7rem;
+    height: 5.6rem; }
+  80% {
+    background: url(../img/hearth_right.png) no-repeat;
+    width: 6.7rem;
+    height: 5.6rem; } }
+
+@-webkit-keyframes transform {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes transform {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  30% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
 
 @-webkit-keyframes notrasform {
   100% {
@@ -597,6 +698,15 @@ html, body {
     margin: 12% 0 0 1%; }
     .slide-icon--item__red {
       color: #f73934; }
+
+.lens, .flash {
+  width: 100%;
+  height: 100%; }
+
+.flash {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*Second slide*/
 .slide-icons--second-page {
@@ -1132,5 +1242,143 @@ html, body {
       left: 20%; } }
 
 @media screen and (max-width: 640px) {
-  html {
-    font-size: 4px; } }
+  .content-layout {
+    height: 100%; }
+    .content-layout--first {
+      height: 1110px;
+      margin-bottom: 10px; }
+    .content-layout:last-of-type {
+      margin-top: -5rem; }
+  .header-layout__mobile {
+    height: 14rem;
+    width: 100%;
+    padding: 3rem 0;
+    z-index: 2; }
+  .header-logo__mobile {
+    padding: 0 4rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .logo {
+    width: 110px;
+    height: 98px;
+    margin: 0; }
+  .logo-item {
+    font-size: 3.99rem;
+    margin: 4rem 0 0; }
+  .slide-icon {
+    width: 20.8rem; }
+    .slide-icon--item {
+      font-size: 2.6rem;
+      line-height: 2.8rem; }
+  .icon__mobile {
+    width: 8%;
+    float: left;
+    margin-left: 9%; }
+  .icon--menu {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin-top: 2rem; }
+    .icon--menu path {
+      fill: #ef2a34; }
+  .icon--circle {
+    width: 13rem;
+    height: 10rem; }
+  .icon--hearth, .icon--prize {
+    top: 1rem; }
+  .icon--instagram:after {
+    top: 2rem;
+    left: 1.7rem; }
+  .icon--instagram:hover:before {
+    top: 7px;
+    right: 5px; }
+  .icon--instagram:hover:after {
+    top: 2rem;
+    left: 1.7rem; }
+  .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+    top: 14px;
+    left: 12px; }
+  .icon--instagram:hover .flash {
+    top: 7px;
+    left: 7px; }
+  .wrapper {
+    background-color: #fff; }
+    .wrapper--layout {
+      top: 20rem;
+      left: 0; }
+  .main-slide {
+    background: url(../img/background_mobile.jpg) no-repeat;
+    height: 74%;
+    padding: 45.4% 0 0 4.6%; }
+  .column {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    height: 640px; }
+    .column--left-second {
+      background: url(../img/slide_girl_background.png) no-repeat; }
+    .column--left-third {
+      background: url(../img/lays-prize-moblie.png) no-repeat; }
+    .column--right-third {
+      bottom: 6rem; }
+    .column--right-fourth {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+  .column--right-third__background.animation-3d__background {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .column.animated--right.animated__delay {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .menu {
+    display: none; }
+  .menu-item {
+    font-size: 2.4rem;
+    display: inline-block;
+    margin: 2% 15% 0 0; }
+  .menu-item-layout {
+    background-color: #f6f6f6;
+    border-top: 1px solid #eee; }
+    .menu-item-layout:last-of-type {
+      display: block; }
+  .show {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    margin: 0; }
+  .close-item {
+    margin: 2% 0 0; }
+  .title {
+    line-height: 5.4rem; }
+  .title-big--layout {
+    font-size: 8.78rem;
+    width: 30rem;
+    height: 30rem;
+    top: 7rem;
+    left: 34%; }
+  .title-large {
+    font-size: 7.8rem; }
+  .title-little {
+    font-size: 4.94rem; }
+  .gallery--item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 19rem;
+        -ms-flex: 1 1 19rem;
+            flex: 1 1 19rem; } }

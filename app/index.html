@@ -10,34 +10,43 @@
 </head>
 <body>
 <div class="page">
-	<header class="header-layout">
-		<div class="menu-layout">
-			<div class="header-logo">
+	<header class="header-layout header-layout__mobile">
+		<div class="menu-layout menu-layout__mobile">
+			<div class="header-logo header-logo__mobile">
 				<div class="logo"></div>
 				<span class="logo-item">
 					#летосLays
 				</span>
+				<a id="show-menu">
+					<img src="img/list.svg" data-js-svg  class="icon--menu" alt="меню" />
+				</a>
+				<nav class="menu header-menu header-menu__mobile" id="menu">
+					<a href="#gallery" class="menu-link menu-item-layout">
+						<div class="icon icon--insta icon__mobile"></div>
+						<span class="menu-item">
+							Галерея
+						</span>
+					</a>
+					<a href="#about" class="menu-link menu-item-layout">
+						<div class="icon icon--box icon__mobile"></div>
+						<span class="menu-item">
+							О проекте
+						</span>
+					</a>
+					<a href="#lays" class="menu-link menu-item-layout">
+						<div class="icon icon--map icon__mobile"></div>
+						<span class="menu-item">
+							Лето с Lay's
+						</span>
+					</a>
+					<a href="" class="menu-item-layout">
+						<span class="menu-item close-item">
+							СВЕРНУТЬ МЕНЮ
+						</span>
+					</a>
+				</nav>
 			</div>
-			<nav class="menu header-menu">
-				<a href="#gallery" class="menu-link menu-item-layout">
-					<div class="icon icon--insta"></div>
-					<span class="menu-item">
-						Галерея
-					</span>
-				</a>
-				<a href="#about" class="menu-link menu-item-layout">
-					<div class="icon icon--box"></div>
-					<span class="menu-item">
-						О проекте
-					</span>
-				</a>
-				<a href="#lays" class="menu-link menu-item-layout">
-					<div class="icon icon--map"></div>
-					<span class="menu-item">
-						Лето с Lay's
-					</span>
-				</a>
-			</nav>
+			
 		</div>
 	</header>
 	<div class="wrapper wrapper--layout">
@@ -50,7 +59,6 @@
 								<div class="icon icon--instagram">
 									<div class="lens animated--lens"></div>
 									<div class="flash animated--flash"></div>
-
 								</div>
 							</div>
 							<div class="slide-icon--item">

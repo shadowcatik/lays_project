@@ -388,7 +388,7 @@
       height: 1110px;
       margin-bottom: 5px; }
     .content-layout:last-of-type {
-      margin-top: -5rem; }
+      margin-top: -4rem; }
   .header-layout__mobile {
     height: 10rem;
     width: 100%;
@@ -517,7 +517,8 @@
     .column--right {
       padding: 2.4rem 2.85rem 0 3.1rem; }
     .column--right-third {
-      bottom: 6rem;
+      height: 675px;
+      bottom: 5rem;
       -webkit-box-ordinal-group: 3;
       -webkit-order: 2;
           -ms-flex-order: 2;
@@ -546,7 +547,7 @@
     display: block;
     width: 100%;
     position: absolute;
-    top: 20rem;
+    top: 16rem;
     left: 0;
     margin: 0; }
   .close-item {
@@ -561,6 +562,11 @@
     left: 30%; }
   .title-large {
     font-size: 7.8rem; }
+  .title-middle {
+    width: 100%;
+    font-size: 5.7rem;
+    line-height: 6.1rem;
+    padding: 6% 0 0 5%; }
   .title-little {
     font-size: 4.94rem; }
   .title-small {
@@ -593,4 +599,18 @@
     -webkit-flex: 1 1 15rem;
         -ms-flex: 1 1 15rem;
             flex: 1 1 15rem;
-    margin: .3rem 1.1rem 0 -.4rem; } }
+    margin: .3rem 1.1rem 0 -.4rem; }
+  .about--layout {
+    padding: 0  0 17.5% 0;
+    height: 29rem;
+    background-size: 39%;
+    background-position-x: 327px;
+    background-position-y: 137px; }
+  .slide-information {
+    width: 28rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    position: relative;
+    bottom: 18rem;
+    left: 2.5rem;
+    margin: 0; } }

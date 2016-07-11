@@ -509,12 +509,15 @@
 				left: 20%
 
 @media screen and (max-width: 640px)
+	html
+		font-size: 10px
+	
 	.content-layout
 		height: 100%
 
 		&--first
 			height: 1110px
-			margin-bottom: 10px
+			margin-bottom: 5px
 
 		&:last-of-type
 			margin-top: -5rem
@@ -525,7 +528,7 @@
 
 	.header-layout
 		&__mobile
-			height: 14rem
+			height: 10rem
 			width: 100%
 			padding: 3rem 0	
 			z-index: 2
@@ -541,32 +544,42 @@
 			justify-content: space-between
 
 	.logo
-		width: 110px
-		height: 98px
+		width: 112px
+		height: 96px
 		margin: 0
+		left: -2px
+		top: 1px
 
 	.logo-item
 		font-size: 3.99rem
-		margin: 4rem 0 0
+		margin: 2.5rem 0 0 1rem
 
 	.slide-icon
-		width: 20.8rem
+		width: 21rem
+		margin: -.3rem 0 0 
 
+		&:nth-of-type(2)
+			width: 15rem
+		
+		&:nth-of-type(3)
+			margin: -.35rem 0 0 .5rem
+		
 		&--item
 			font-size: 2.6rem
 			line-height: 2.8rem
+			margin: 11% 0 0 1%
 
 	.icon
+
 		&__mobile
 			width: 8%
 			float: left
 			margin-left: 9%
 		
 		&--menu
-			width: 8rem
-			height: 8rem
+			width: 10rem
+			height: 10rem
 			display: block
-			margin-top: 2rem
 
 			path
 				fill: #ef2a34
@@ -575,44 +588,88 @@
 			width: 13rem
 			height: 10rem
 
+		&--item
+			margin: 11% 0 0 0
+
+		&--hearth
+			top: 1.2rem
+			
 		&--hearth,
 		&--prize
-			top: 1rem
+			left: 0
+			background-size: 95%
+
+		&--prize
+			top: 0
 
 		&--instagram
+			top: 4px
 
 			&:after
-				top: 2rem
-				left: 1.7rem
+				top: 2.6rem
+				left: 2.2rem
 
 			&:hover
 				&:before
-					top: 7px
-					right: 5px
-
-				&:after
-					top: 2rem
-					left: 1.7rem
+					top: 8px
+					right: 6px
 
 				.lens 
-					top: 14px 
-					left: 12px
+					top: 23px 
+					left: 20px
 
 				.flash
-					top: 7px
-					left: 7px
+					top: 10px
+					left: 9px
+
+		&--facebook-layout
+			display: none
+
+		&--vk-layout
+			width: 11.7rem
+			height: 11.7rem
+			top: 3.5rem
+			left: 4.5rem
+			transform: rotate(-27deg)
+
+		&--vk-inner
+			width: 6.5rem
+			height: 6.5rem
+			padding: 23% 0 0 
+
+		&--inst-layout
+			width: 9rem
+			height: 9rem
+			top: 4.7rem
+			right: -5.6rem
+			transform: rotate(22deg)
+
+		&--inst-inner
+			width: 4.4rem
+			height: 4.4rem
+			right: 0
+			top: 2.3rem
+
+	.animation
+		&--circle
+			top: .4rem
+			left: .2rem
 
 	.wrapper
 		background-color: #fff
 
 		&--layout
-			top: 20rem
+			top: 16rem
 			left: 0
 
 	.main-slide
 		background: url(../img/background_mobile.jpg) no-repeat
-		height: 74%
-		padding: 45.4% 0 0 4.6%
+		height: 73.5%
+		padding: 45.4% 0 0 3.5%
+
+	.slide-page
+		&--third
+			margin-top: -2.5rem
 
 	.column
 		flex: 1 1 100%
@@ -624,17 +681,19 @@
 		&--left-third
 			background: url(../img/lays-prize-moblie.png) no-repeat
 
+		&--right
+			padding: 2.4rem 2.85rem 0 3.1rem
+
 		&--right-third
 			bottom: 6rem
+			order: 2
 
 		&--right-fourth
 			order: 1
 
-	.column--right-third__background.animation-3d__background
+	.animation-3d__background
 		transform: none
-
-	.column.animated--right.animated__delay
-		order: 2
+		
 
 	.menu
 		display: none
@@ -663,15 +722,15 @@
 		margin: 2% 0 0
 
 	.title
-		line-height: 5.4rem
+		line-height: 5rem
 
 	.title-big
 		&--layout
 			font-size: 8.78rem
 			width: 30rem
 			height: 30rem
-			top: 7rem
-			left: 34%
+			top: 6rem
+			left: 30%
 
 	.title-large
 		font-size: 7.8rem
@@ -679,9 +738,42 @@
 	.title-little
 		font-size: 4.94rem
 
+	.title-small
+		font-size: 4.1rem
+		line-height: 5.4rem
+
+		&--layout
+			top: 46.5%
+			left: 7rem
+
+	.button
+		width: 21.5rem
+		height: 2rem
+		font-size: 2.21rem
+		left: 56%
+		bottom: 18.8%
+
+		&--red
+			left: 33%
+			bottom: 15.3%
+
+	.arrow
+		left: 16rem
+		top: 21.6rem
+
+		&:before
+			height: 3.5rem
+			width: 3.5rem
+
+		&:after
+			height: 6rem
+			width: .4rem
+			left: 1.5rem
+
 	.gallery
 		&--item
-			flex: 1 1 19rem
+			flex: 1 1 15rem
+			margin: .3rem 1.1rem 0 -.4rem
 
 
 	

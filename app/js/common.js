@@ -6,31 +6,9 @@ $(function(){
 	    // Injection complete
 	});
 
-	//canvas
+	//Visible for animation
 
-	window.onload = function() {
-	    var drawingCanvas = document.getElementById('instagram');
-	    if(drawingCanvas && drawingCanvas.getContext) {
-		    var context = drawingCanvas.getContext('2d');
-		     // Внешняя окружность 
-		    context.strokeStyle = "#f73934";
-		    context.fillStyle = "#f73934";
-		    context.shadowColor = '#f73934';
-		    context.shadowBlur = 40;
-		    context.beginPath();
-		    context.arc(200,100,5,0,Math.PI*2,true);
-		    context.closePath();
-		    context.stroke();
-		    context.fill();
-		    //Внутренняя окружность
-		    context.fillStyle = "#ff0000";
-		    context.beginPath();
-		    context.arc(100,100,1,0,Math.PI*2,true);
-		    context.closePath();
-		    context.stroke();
-		    context.fill();
-	    }
-    }
+	
 
     
 });
@@ -52,3 +30,25 @@ window.onclick = function(event) {
     }
   }
 }
+$(this).scroll(function(){
+    function isVisible(elem) {
+    
+      var coords = elem.getBoundingClientRect();
+    
+      var windowHeight = document.documentElement.clientHeight;
+    
+      var topVisible = coords.top > 0 && coords.top < windowHeight;
+      var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+    
+      return topVisible || bottomVisible;
+    }
+    
+    if(isVisible(document.getAttribute('[data-js-animation]'))){
+      $(".right").addClass("animated--right");
+      $(".left").addClass("animated--left");
+    }
+    else{
+      $(".left").removeClass("animated--left");
+      $(".right").removeClass("animated--right");
+    }
+});

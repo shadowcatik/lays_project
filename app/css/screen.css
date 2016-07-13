@@ -753,9 +753,26 @@
         -ms-flex: 1 1 20rem;
             flex: 1 1 20rem; } }
 
+@media screen and (min-width: 400px) and (max-width: 455px) {
+  .content-layout--first {
+    height: 714px; }
+  .content-layout:last-of-type {
+    margin-top: -6rem; }
+  .column {
+    height: 414px; }
+  .gallery--item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 20rem;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem; }
+  .location {
+    padding-top: 7rem; } }
+
 @media screen and (min-width: 370px) and (max-width: 400px) {
   html {
     font-size: 5px; }
+  .content-layout--first {
+    height: 643px; }
   .column {
     height: 375px; } }
 
@@ -769,28 +786,51 @@
     .column--left-fourth {
       top: -8rem;
       height: 347px; }
+  .content-layout--first {
+    height: 550px; }
+  .content-layout .main-slide {
+    background-size: 100%; } }
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
   .gallery--item {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 22rem;
         -ms-flex: 1 1 22rem;
             flex: 1 1 22rem; } }
 
-@media screen and (min-width: 320px) {
-  .content-layout--first {
-    height: 647px; }
-  .content-layout .main-slide {
-    background-size: 100%; }
-  .logo {
-    width: 11.4rem;
-    height: 11.4rem; }
+@media screen and (min-width: 320px) and (max-width: 455px) {
   .column {
     background-size: cover; }
     .column--left-fourth {
       background-size: cover;
       position: relative; }
-  .icon__mobile {
-    background-size: 60%; }
+  .logo {
+    width: 11.4rem;
+    height: 11.4rem; }
   .about--layout {
     background-position-x: 93%;
     background-position-y: 98%;
-    height: 32rem; } }
+    height: 32rem; }
+  .icon__mobile {
+    background-size: 60%; }
+  .icon--instagram:after {
+    top: 10px;
+    left: 9px; }
+  .icon--instagram:hover:before {
+    top: 4px;
+    right: 4px; }
+  .icon--instagram:hover .lens {
+    top: 10px;
+    left: 8px; }
+    .icon--instagram:hover .lens:before {
+      top: 2px;
+      left: 5px; }
+    .icon--instagram:hover .lens:after {
+      left: 0;
+      top: 0; }
+  .icon--instagram:hover .flash {
+    top: 4px;
+    left: 4px; }
+    .icon--instagram:hover .flash:after {
+      left: 0;
+      top: 0; } }

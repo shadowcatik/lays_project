@@ -971,11 +971,32 @@
 		&--item
 			flex: 1 1 20rem
 
+@media screen and (min-width: 400px) and (max-width: 455px)
+	.content-layout
+		&--first
+			height: 714px
+
+		&:last-of-type
+			margin-top: -6rem
+	.column
+		height: 414px
+
+	.gallery
+		&--item
+			flex: 1 1 20rem
+
+	.location
+		padding-top: 7rem
+
 
 
 @media screen and (min-width: 370px) and (max-width: 400px)
 	html
 		font-size: 5px
+
+	.content-layout
+		&--first
+			height: 643px
 
 	.column
 		height: 375px
@@ -994,24 +1015,21 @@
 			top: -8rem
 			height: 347px
 
-	.gallery
-		&--item
-			flex: 1 1 22rem
-
-@media screen and (min-width: 320px)
+	
 
 	.content-layout
-		//height: 320px
-
 		&--first
-			height: 647px
+			height: 550px
 
 		.main-slide
 			background-size: 100%
 
-	.logo
-		width: 11.4rem
-		height: 11.4rem
+@media screen and (min-width: 320px) and (max-width: 400px)
+	.gallery
+		&--item
+			flex: 1 1 22rem
+
+@media screen and (min-width: 320px) and (max-width: 455px)
 
 	.column
 		background-size: cover
@@ -1020,9 +1038,9 @@
 			background-size: cover
 			position: relative
 
-	.icon
-		&__mobile
-			background-size: 60%
+	.logo
+		width: 11.4rem
+		height: 11.4rem
 
 	.about
 		&--layout
@@ -1030,9 +1048,39 @@
 			background-position-y: 98%
 			height: 32rem
 
-	
+	.icon
+		&__mobile
+			background-size: 60%
 
+		&--instagram
+			&:after
+				top: 10px
+				left: 9px
 
+			&:hover
+				&:before
+					top: 4px
+					right: 4px
+
+				.lens
+					top: 10px
+					left: 8px
+
+					&:before
+						top: 2px
+						left: 5px
+
+					&:after
+						left: 0
+						top: 0
+
+				.flash
+					top: 4px
+					left: 4px
+
+					&:after
+						left: 0
+						top: 0
 
 	
 

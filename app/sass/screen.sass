@@ -66,6 +66,31 @@
 			width: 11rem
 			height: 8.1rem
 
+		&--instagram
+			background-size: 85%
+			left: .35rem
+			bottom: .2rem
+
+			&:after
+				top: 2.1rem
+				left: 1.7rem
+
+			&:before
+				top: 7px
+				right: 13px
+
+			&:hover
+				.lens
+					top: 18px
+					left: 15px
+
+				.flash
+					top: 8px
+					left: 8px
+
+					&:after
+						left: -4px
+
 		&--hearth
 			background-size: 89%
 			margin: .3rem auto
@@ -558,13 +583,13 @@
 
 	.slide-icon
 		width: 21rem
-		margin: -.3rem 0 0 
+		margin: .5rem 0 0 
 
 		&:nth-of-type(2)
 			width: 15rem
 		
 		&:nth-of-type(3)
-			margin: -.35rem 0 0 0
+			margin: .4rem 3% 0 0
 		
 		&--item
 			font-size: 2.6rem
@@ -618,7 +643,7 @@
 			&:hover
 				&:before
 					top: 8px
-					right: 6px
+					right: 10px
 
 				.lens 
 					top: 23px 
@@ -674,7 +699,7 @@
 	.animation
 		&--circle
 			top: .4rem
-			left: .2rem
+			left: .1rem
 
 	.wrapper
 		background-color: #fff
@@ -685,7 +710,7 @@
 
 	.main-slide
 		background: url(../img/background_mobile.jpg) no-repeat
-		height: 73.5%
+		height: 74.2%
 		padding: 45.4% 0 0 3.5%
 	
 
@@ -703,6 +728,8 @@
 		&--left-people
 			height: 678px
 			top: 5px
+			order: 2
+			z-index: 2
 
 		&--left-fourth
 			background: url(../img/people-moblie.png) no-repeat
@@ -710,7 +737,7 @@
 
 		&--right
 			height: 590px
-			padding: 2.4rem 2.85rem 0 3.1rem
+			padding: 2.4rem 3.1rem 0 3.1rem
 
 		&--right-third
 			height: 667px
@@ -824,7 +851,7 @@
 	.gallery
 		&--item
 			flex: 1 1 17rem
-			margin: .3rem 1.1rem 0 -.4rem
+			margin: .3rem 1rem .4rem -.4rem
 
 	.about
 		&--layout

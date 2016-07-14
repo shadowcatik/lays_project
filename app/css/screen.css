@@ -53,6 +53,24 @@
   .icon--circle {
     width: 11rem;
     height: 8.1rem; }
+  .icon--instagram {
+    background-size: 85%;
+    left: .35rem;
+    bottom: .2rem; }
+    .icon--instagram:after {
+      top: 2.1rem;
+      left: 1.7rem; }
+    .icon--instagram:before {
+      top: 7px;
+      right: 13px; }
+    .icon--instagram:hover .lens {
+      top: 18px;
+      left: 15px; }
+    .icon--instagram:hover .flash {
+      top: 8px;
+      left: 8px; }
+      .icon--instagram:hover .flash:after {
+        left: -4px; }
   .icon--hearth {
     background-size: 89%;
     margin: .3rem auto;
@@ -429,11 +447,11 @@
             justify-content: space-between; }
   .slide-icon {
     width: 21rem;
-    margin: -.3rem 0 0; }
+    margin: .5rem 0 0; }
     .slide-icon:nth-of-type(2) {
       width: 15rem; }
     .slide-icon:nth-of-type(3) {
-      margin: -.35rem 0 0 0; }
+      margin: .4rem 3% 0 0; }
     .slide-icon--item {
       font-size: 2.6rem;
       line-height: 2.8rem;
@@ -470,7 +488,7 @@
       left: 2.2rem; }
     .icon--instagram:hover:before {
       top: 8px;
-      right: 6px; }
+      right: 10px; }
     .icon--instagram:hover .lens {
       top: 23px;
       left: 20px; }
@@ -518,7 +536,7 @@
     right: 1px; }
   .animation--circle {
     top: .4rem;
-    left: .2rem; }
+    left: .1rem; }
   .wrapper {
     background-color: #fff; }
     .wrapper--layout {
@@ -526,7 +544,7 @@
       left: 0; }
   .main-slide {
     background: url(../img/background_mobile.jpg) no-repeat;
-    height: 73.5%;
+    height: 74.2%;
     padding: 45.4% 0 0 3.5%; }
   .column {
     -webkit-box-flex: 1;
@@ -541,14 +559,19 @@
       top: 2.5rem; }
     .column--left-people {
       height: 678px;
-      top: 5px; }
+      top: 5px;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      z-index: 2; }
     .column--left-fourth {
       background: url(../img/people-moblie.png) no-repeat;
       -webkit-animation: none;
               animation: none; }
     .column--right {
       height: 590px;
-      padding: 2.4rem 2.85rem 0 3.1rem; }
+      padding: 2.4rem 3.1rem 0 3.1rem; }
     .column--right-third {
       height: 667px;
       bottom: 18px;
@@ -648,7 +671,7 @@
     -webkit-flex: 1 1 17rem;
         -ms-flex: 1 1 17rem;
             flex: 1 1 17rem;
-    margin: .3rem 1.1rem 0 -.4rem; }
+    margin: .3rem 1rem .4rem -.4rem; }
   .about--layout {
     padding: 0  0 17.5% 0;
     height: 29rem;

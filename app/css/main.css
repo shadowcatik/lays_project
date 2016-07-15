@@ -149,7 +149,7 @@ html, body {
     display: block;
     position: relative;
     margin: 0 auto; }
-  .icon--menu {
+  .icon--menu, .icon--close {
     display: none; }
   .icon--insta {
     background: url(../img/instagram.png) no-repeat; }
@@ -1110,6 +1110,9 @@ html, body {
   .icon--circle {
     width: 10rem;
     height: 7.1rem; }
+  .icon--instagram:hover:before {
+    top: 7px;
+    right: 14px; }
   .icon--hearth {
     background-size: 86%;
     margin: 0 auto;
@@ -1272,7 +1275,28 @@ html, body {
       top: 20%;
       left: 20%; } }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 870px) {
+  .content-layout .main-slide {
+    background-position-x: 75%; }
+  .gallery--item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 11rem;
+        -ms-flex: 1 1 11rem;
+            flex: 1 1 11rem; } }
+
+@media screen and (max-width: 770px) {
+  .about--layout {
+    padding: 0 0 8.5% 37%;
+    background-size: 36%; } }
+
+@media screen and (max-width: 730px) {
+  .gallery--item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 10rem;
+        -ms-flex: 1 1 10rem;
+            flex: 1 1 10rem; } }
+
+@media screen and (max-width: 680px) {
   html {
     font-size: 10px; }
   .content-layout {
@@ -1300,6 +1324,9 @@ html, body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .header-menu {
+    margin: 0;
+    top: 16rem; }
   .logo {
     width: 112px;
     height: 96px;
@@ -1341,8 +1368,17 @@ html, body {
     width: 10rem;
     height: 10rem;
     display: block; }
-    .icon--menu path {
+  .icon--menu, .icon--close {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    .icon--menu path, .icon--close path {
       fill: #ef2a34; }
+  .icon--close {
+    width: 10rem;
+    height: 5rem;
+    position: relative;
+    top: 3rem;
+    right: 0; }
   .icon--circle {
     width: 13rem;
     height: 10rem; }
@@ -1487,13 +1523,6 @@ html, body {
     border-top: 1px solid #eee; }
     .menu-item-layout:last-of-type {
       display: block; }
-  .show {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 16rem;
-    left: 0;
-    margin: 0; }
   .close-item {
     margin: 2% 0 0; }
   .title {
@@ -1666,7 +1695,7 @@ html, body {
   .location {
     padding-top: 7rem; } }
 
-@media screen and (min-width: 370px) and (max-width: 400px) {
+@media screen and (min-width: 356px) and (max-width: 400px) {
   html {
     font-size: 5px; }
   .content-layout--first {
@@ -1674,7 +1703,7 @@ html, body {
   .column {
     height: 375px; } }
 
-@media screen and (min-width: 320px) and (max-width: 370px) {
+@media screen and (min-width: 320px) and (max-width: 355px) {
   html {
     font-size: 4px; }
   .column {

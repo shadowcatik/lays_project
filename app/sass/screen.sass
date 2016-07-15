@@ -312,6 +312,12 @@
 			width: 10rem
 			height: 7.1rem
 
+		&--instagram
+			&:hover
+				&:before
+					top: 7px
+					right: 14px
+
 		&--hearth
 			background-size: 86%
 			margin: 0 auto
@@ -533,7 +539,27 @@
 				top: 20%
 				left: 20%
 
-@media screen and (max-width: 640px)
+@media screen and (max-width: 870px)
+	.content-layout
+
+		.main-slide
+			background-position-x: 75%
+	.gallery
+		&--item
+			flex: 1 1 11rem
+
+@media screen and (max-width: 770px)
+	.about
+		&--layout
+			padding: 0 0 8.5% 37%
+			background-size: 36%
+
+@media screen and (max-width: 730px)
+	.gallery
+		&--item
+			flex: 1 1 10rem
+
+@media screen and (max-width: 680px)
 	html
 		font-size: 10px
 	
@@ -562,6 +588,10 @@
 			flex-flow: row nowrap
 			justify-content: space-between
 
+	.header-menu
+		margin: 0
+		top: 16rem
+
 	.logo
 		width: 112px
 		height: 96px
@@ -575,6 +605,8 @@
 	.logo-item
 		font-size: 3.99rem
 		margin: 2.5rem 0 0 1rem
+
+
 
 	.slide-icons
 		&--first-page
@@ -611,8 +643,19 @@
 			height: 10rem
 			display: block
 
+		&--menu,
+		&--close
+			transition: all 1s ease
+			
 			path
 				fill: #ef2a34
+
+		&--close
+			width: 10rem
+			height: 5rem
+			position: relative
+			top: 3rem
+			right: 0
 
 		&--circle
 			width: 13rem
@@ -712,7 +755,6 @@
 		background: url(../img/background_mobile.jpg) no-repeat
 		height: 74.2%
 		padding: 45.4% 0 0 3.5%
-	
 
 	.column
 		flex: 1 1 100%
@@ -777,14 +819,6 @@
 
 		&:last-of-type
 			display: block
-
-	.show
-		display: block
-		width: 100%
-		position: absolute
-		top: 16rem
-		left: 0
-		margin: 0
 
 	.close-item
 		margin: 2% 0 0
@@ -1017,7 +1051,7 @@
 
 
 
-@media screen and (min-width: 370px) and (max-width: 400px)
+@media screen and (min-width: 356px) and (max-width: 400px)
 	html
 		font-size: 5px
 
@@ -1028,7 +1062,7 @@
 	.column
 		height: 375px
 
-@media screen and (min-width: 320px) and (max-width: 370px)
+@media screen and (min-width: 320px) and (max-width: 355px)
 	html
 		font-size: 4px
 
@@ -1041,8 +1075,6 @@
 		&--left-fourth
 			top: -8rem
 			height: 347px
-
-	
 
 	.content-layout
 		&--first

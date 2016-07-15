@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+
 	<title>Lay's Yellow Trend</title>
 </head>
 <body>
@@ -19,6 +20,7 @@
 				</span>
 				<a id="show-menu">
 					<img src="img/list.svg" data-js-svg  class="icon--menu" alt="меню" />
+					<img src="img/cross.svg" data-js-svg  class="icon--close close" alt="меню" />
 				</a>
 				<nav class="menu header-menu" id="menu">
 					<a href="#gallery" class="menu-link menu-item-layout">
@@ -39,7 +41,7 @@
 							Лето с Lay's
 						</span>
 					</a>
-					<a href="" class="menu-item-layout">
+					<a href="" class="menu-item-layout close">
 						<span class="menu-item close-item">
 							СВЕРНУТЬ МЕНЮ
 						</span>
@@ -51,7 +53,7 @@
 	</header>
 	<div class="wrapper wrapper--layout">
 		<main class="container">
-			<section data-js-animation class="content-layout content-layout--first left">
+			<section class="content-layout content-layout--first left js-animation">
 				<div class="main-slide">
 					<div class="slide-icons--first-page">
 						<div class="slide-icon">
@@ -96,7 +98,7 @@
 					</h1>
 				</div>
 			</section>
-			<section data-js-animation class="content-layout right">
+			<section  class="content-layout right ">
 				<div class="slide-page slide-page--layout">
 					<div class="column column--left column--left-second">
 						<div class="slide-icons--second-page">
@@ -156,7 +158,7 @@
 			</section>
 			<section class="content-layout">
 				<div class="slide-page--layout slide-page--third">
-					<div data-js-animation class="column column--left-third about--item right">
+					<div class="column column--left-third about--item right js-animation">
 						<div class="about ">
 							<div class="about--layout ">
 								<h3 class="title-middle title-middle--layout">
@@ -171,17 +173,17 @@
 							</a>
 						</div>
 					</div>
-					<div data-js-animation class="column column--right-third left">
+					<div class="column column--right-third left js-animation">
 						<div class="column--right-third__background animation-3d__background"></div>
 					</div>
 				</div>
 			</section>
 			<section class="content-layout">
 				<div class="slide-page slide-page--layout">
-					<div data-js-animation class="column column--left-people right">
+					<div id="js-animation" class="column column--left-people right js-animation">
 						<div class="column--left-fourth animation-3d__background"></div>
 					</div>
-					<div data-js-animation class="column column--right-fourth left">
+					<div class="column column--right-fourth left js-animation">
 						<div class="location"></div>
 						<h3 class="title-medium">
 							Лето с Lay's

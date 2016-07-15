@@ -6,30 +6,24 @@ $(function(){
 	    // Injection complete
 	});
 
-	//Visible for animation
-
+  //mobile menu
+	
+ $(document).ready(function() {
+    $('#show-menu').click(function() {
+      $('.menu, .icon--close').fadeIn();
+      $('.icon--menu').fadeOut();
+      return false;
+    });
+    $('.close').click(function() {
+      $('.menu, .icon--close').fadeOut();
+      $('.icon--menu').fadeIn();
+      return false;
+    });
+  });
 	
 
-    
 });
-//mobile menu
-
-document.getElementById("show-menu").onclick = function() {myFunction()};
-function myFunction() {
-    document.getElementById("menu").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.icon--menu')) {
-    var dropdowns = document.getElementsByClassName("menu");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+//Visible for animation
 $(this).scroll(function(){
     function isVisible(elem) {
     
@@ -43,7 +37,7 @@ $(this).scroll(function(){
       return topVisible || bottomVisible;
     }
     
-    if(isVisible(document.getAttribute('[data-js-animation]'))){
+    if(isVisible(document.getElementById('js-animation'))){
       $(".right").addClass("animated--right");
       $(".left").addClass("animated--left");
     }

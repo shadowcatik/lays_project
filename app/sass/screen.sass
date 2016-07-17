@@ -565,6 +565,14 @@
 		&--item
 			flex: 1 1 10rem
 
+@media screen and (min-width: 681px) and (max-width: 1960px)
+
+	.menu
+		.animated
+			&--left,
+			&--right
+				animation: none
+
 @media screen and (max-width: 680px)
 	html
 		font-size: 10px
@@ -601,18 +609,16 @@
 	.main-slide
 		background: url(../img/background_mobile.jpg) no-repeat
 		height: 73.9%
-		padding: 45.4% 0 0 3.5%
+		padding: 44.4% 0 0 3.5%
 	
 	.content-layout
 		height: 100%
 
 		&--first
-			height: 1116px
-			margin-bottom: 1rem
+			height: 1114px
 
 		&:last-of-type
 			margin-top: -4rem
-
 
 	.header-layout
 		&__mobile
@@ -659,7 +665,7 @@
 			width: 15rem
 		
 		&:nth-of-type(3)
-			margin: .4rem 3% 0 0
+			margin: .4rem 6% 0 0
 		
 		&--item
 			font-size: 2.6rem
@@ -718,15 +724,15 @@
 			background-size: 96%
 			top: 4px
 
-			&:after
-				top: 2.6rem
-				left: 2.2rem
-
 			&:hover
 				&:before
 					top: 8px
 					right: 10px
-
+				
+				&:after
+					top: 2.6rem
+					left: 2.2rem
+				
 				.lens 
 					top: 23px 
 					left: 20px
@@ -765,7 +771,6 @@
 
 		&--youtube-footer
 			bottom: 0
-			left: 1rem
 
 		&--vk-footer
 			width: 3rem
@@ -802,7 +807,7 @@
 		font-size: 7.8rem
 
 	.title-medium
-		margin-left: 3rem
+		margin-left: 1rem
 
 	.title-middle
 		width: 100%
@@ -827,10 +832,12 @@
 
 		&--left-second
 			background: url(../img/slide_girl_background.png) no-repeat
+			background-size: 100%
 
 		&--left-third
 			background: url(../img/lays-prize-moblie.png) no-repeat
 			top: 2.5rem
+			background-size: 100%
 
 		&--left-people
 			height: 678px
@@ -841,10 +848,11 @@
 		&--left-fourth
 			background: url(../img/people-moblie.png) no-repeat
 			animation: none
+			background-size: 100%
 
 		&--right
 			height: 590px
-			padding: 2.4rem 1.4rem 0 3.1rem
+			padding: 2.4rem 3.1rem 0 3.1rem
 
 		&--right-third
 			height: 667px
@@ -866,7 +874,7 @@
 		width: 21.5rem
 		height: 2rem
 		font-size: 2.21rem
-		left: 58%
+		left: 56%
 		bottom: 18.8%
 
 		&--red
@@ -901,8 +909,8 @@
 		&--layout
 			padding: 0  0 17.5% 0
 			height: 29rem
-			background-size: 39%
-			background-position-x: 329px
+			background-size: 38%
+			background-position-x: 327px
 			background-position-y: 138px
 
 	.slide-information
@@ -916,9 +924,9 @@
 
 	.location
 		height: 35rem
-		background-size: 90%
+		background-size: 87%
 		top: 5.9rem
-		left: 1rem
+		left: 5px
 		padding-bottom: 5rem
 		
 	.footer
@@ -946,7 +954,7 @@
 		padding: 2.55rem 0 2.5rem
 
 		&--youtube
-			width: 7rem
+			width: 8.9rem
 
 		&--planet
 			&:before

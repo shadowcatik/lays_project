@@ -1295,6 +1295,11 @@ html, body {
         -ms-flex: 1 1 10rem;
             flex: 1 1 10rem; } }
 
+@media screen and (min-width: 681px) and (max-width: 1960px) {
+  .menu .animated--left, .menu .animated--right {
+    -webkit-animation: none;
+            animation: none; } }
+
 @media screen and (max-width: 680px) {
   html {
     font-size: 10px; }
@@ -1323,11 +1328,11 @@ html, body {
   .main-slide {
     background: url(../img/background_mobile.jpg) no-repeat;
     height: 73.9%;
-    padding: 45.4% 0 0 3.5%; }
+    padding: 44.4% 0 0 3.5%; }
   .content-layout {
     height: 100%; }
     .content-layout--first {
-      height: 1116px; }
+      height: 1114px; }
     .content-layout:last-of-type {
       margin-top: -4rem; }
   .header-layout__mobile {
@@ -1377,7 +1382,7 @@ html, body {
     .slide-icon:nth-of-type(2) {
       width: 15rem; }
     .slide-icon:nth-of-type(3) {
-      margin: .4rem 3% 0 0; }
+      margin: .4rem 6% 0 0; }
     .slide-icon--item {
       font-size: 2.6rem;
       line-height: 2.8rem;
@@ -1418,12 +1423,12 @@ html, body {
   .icon--instagram {
     background-size: 96%;
     top: 4px; }
-    .icon--instagram:after {
-      top: 2.6rem;
-      left: 2.2rem; }
     .icon--instagram:hover:before {
       top: 8px;
       right: 10px; }
+    .icon--instagram:hover:after {
+      top: 2.6rem;
+      left: 2.2rem; }
     .icon--instagram:hover .lens, .icon--instagram:hover .flash {
       top: 23px;
       left: 20px; }
@@ -1458,8 +1463,7 @@ html, body {
     right: 0;
     top: 2.3rem; }
   .icon--youtube-footer {
-    bottom: 0;
-    left: 1rem; }
+    bottom: 0; }
   .icon--vk-footer {
     width: 3rem;
     height: 3rem;
@@ -1488,7 +1492,7 @@ html, body {
   .title-large {
     font-size: 7.8rem; }
   .title-medium {
-    margin-left: 3rem; }
+    margin-left: 1rem; }
   .title-middle {
     width: 100%;
     font-size: 5.7rem;
@@ -1509,10 +1513,12 @@ html, body {
             flex: 1 1 100%;
     height: 640px; }
     .column--left-second {
-      background: url(../img/slide_girl_background.png) no-repeat; }
+      background: url(../img/slide_girl_background.png) no-repeat;
+      background-size: 100%; }
     .column--left-third {
       background: url(../img/lays-prize-moblie.png) no-repeat;
-      top: 2.5rem; }
+      top: 2.5rem;
+      background-size: 100%; }
     .column--left-people {
       height: 678px;
       top: 5px;
@@ -1524,10 +1530,11 @@ html, body {
     .column--left-fourth {
       background: url(../img/people-moblie.png) no-repeat;
       -webkit-animation: none;
-              animation: none; }
+              animation: none;
+      background-size: 100%; }
     .column--right {
       height: 590px;
-      padding: 2.4rem 1.4rem 0 3.1rem; }
+      padding: 2.4rem 3.1rem 0 3.1rem; }
     .column--right-third {
       height: 667px;
       bottom: 18px;
@@ -1554,7 +1561,7 @@ html, body {
     width: 21.5rem;
     height: 2rem;
     font-size: 2.21rem;
-    left: 58%;
+    left: 56%;
     bottom: 18.8%; }
     .button--red {
       left: 33%;
@@ -1583,8 +1590,8 @@ html, body {
     .about--layout {
       padding: 0  0 17.5% 0;
       height: 29rem;
-      background-size: 39%;
-      background-position-x: 329px;
+      background-size: 38%;
+      background-position-x: 327px;
       background-position-y: 138px; }
   .slide-information {
     width: 28rem;
@@ -1596,9 +1603,9 @@ html, body {
     margin: 0; }
   .location {
     height: 35rem;
-    background-size: 90%;
+    background-size: 87%;
     top: 5.9rem;
-    left: 1rem;
+    left: 5px;
     padding-bottom: 5rem; }
   .footer {
     height: 8.5rem; }
@@ -1618,7 +1625,7 @@ html, body {
     width: 9rem;
     padding: 2.55rem 0 2.5rem; }
     .social--youtube {
-      width: 7rem; }
+      width: 8.9rem; }
     .social--planet:before {
       background-size: 103%; } }
 

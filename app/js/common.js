@@ -6,25 +6,23 @@ $(function(){
 	    // Injection complete
 	});
 
-  //mobile menu
+    //mobile menu
 	
- $(document).ready(function() {
-    $('#show-menu').click(function() {
-      $('.menu, .icon--close').fadeIn();
-      $('.icon--menu').fadeOut();
-      return false;
-    });
-    $('.close').click(function() {
-      $('.menu, .icon--close').fadeOut();
-      $('.icon--menu').fadeIn();
-      return false;
-    });
-  });
-	
+	$(document).ready(function() {
+	    $('#show-menu').click(function() {
+	      $('.menu, .icon--close').fadeIn();
+	      $('.icon--menu').fadeOut();
+	      return false;
+	    });
+	    $('.close').click(function() {
+	      $('.menu, .icon--close').fadeOut();
+	      $('.icon--menu').fadeIn();
+	      return false;
+	    });
+	});
 
-});
-//Visible for animation
-$(this).scroll(function(){
+	//Visible for animation
+	$(this).scroll(function(){
     function isVisible(elem) {
     
       var coords = elem.getBoundingClientRect();
@@ -36,13 +34,15 @@ $(this).scroll(function(){
     
       return topVisible || bottomVisible;
     }
-    
-    if(isVisible(document.getElementById('js-animation'))){
-      $(".right").addClass("animated--right");
-      $(".left").addClass("animated--left");
-    }
-    else{
-      $(".left").removeClass("animated--left");
-      $(".right").removeClass("animated--right");
-    }
+    $('[data-js-animation]').each(function(index, elem){
+      if(isVisible(elem)){
+        $(elem).hasClass("left") && $(elem).addClass("animated--right");
+        $(elem).hasClass("right") && $(elem).addClass("animated--left");
+      }
+      else{
+        $(elem).removeClass("animated--right animated--left");
+      }
+    });
+  });
+
 });

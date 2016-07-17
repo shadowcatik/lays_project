@@ -1,0 +1,122 @@
+/*Animation*/
+
+.animated
+
+    &--left
+	    animation: timing-left 0.5s linear normal
+	    animation-fill-mode: forwards
+
+    &--right
+	    animation: timing-right 0.5s linear normal
+	    animation-fill-mode: forwards
+   
+.animation
+
+	&--circle
+		position: relative
+		top: .5rem
+		left: -.4rem
+		border-radius: 7rem
+		background: #fff
+		margin: 0 auto
+		animation: notrasform .4s linear normal 
+		animation-fill-mode: forwards
+
+.animation-3d
+	transform: scale3d(0,0,1)
+	animation-delay: .5s
+
+	&__two
+		transform: scale3d(0,0,1)
+		animation-delay: 1s
+
+	&__three
+		transform: scale3d(0,0,1)
+		animation-delay: 1.5s
+
+	&__background
+		transform: scale(1.2)
+
+@keyframes flash
+	0%
+		opacity: 0
+
+	100%
+		opacity: 1
+
+@keyframes background 
+	30%
+		background: url(../img/hearth_left.png) no-repeat
+		width: 6.7rem
+		height: 5.6rem
+		background-size: 100%
+
+	80%
+		background: url(../img/hearth_right.png) no-repeat
+		width: 6.7rem
+		height: 5.6rem
+		background-size: 100%
+
+@keyframes transform
+	0%
+		transform: translateY(10px)
+	30%
+		transform: translateY(-5px)
+	40%
+		transform: translateY(0px)
+	50%
+		transform: translateY(-10px)
+
+@keyframes notrasform
+	100%
+		transform: none
+
+@keyframes notrasform-lens
+	50%
+		transform: none
+
+@keyframes size-lens
+	50%
+		width: 1rem
+		height: 1rem
+
+@keyframes notrasform_background
+	0%
+		transform: none
+
+@keyframes dinamic-lens
+   0%
+	   width: 1rem
+	   height: 1rem
+
+   100%
+	   width: 2rem
+	   height: 2rem
+
+@keyframes timing-left
+   0%
+	   transform: translateX(50%)
+	   opacity: 0
+
+   100%
+	   transform: translateX(0)
+	   opacity: 1
+
+@keyframes timing-right
+   0%
+	   transform: translateX(-100%)
+	   opacity: 0
+
+   100%
+	   transform: translateX(0)
+	   opacity: 1
+
+@keyframes timing-circle
+   0%
+	   width: 5rem
+	   height: 5rem
+	   opacity: 1
+
+   100%
+	   width: 12.5rem
+	   opacity: 1

@@ -52,6 +52,40 @@
 		&--first
 			height: 58rem
 
+	.title
+		line-height: 5.4rem
+
+	.title-big
+		font-size: 8.7rem
+
+		&--layout
+			width: 33rem
+
+	.title-large 
+		font-size: 7.8rem
+		letter-spacing: 0
+
+	.title-medium
+		font-size: 6rem
+
+	.title-middle
+		font-size: 5.4rem
+		line-height: 5.7rem
+
+		&--layout
+			width: 25.5rem
+			padding-top: 5.6rem
+
+	.title-small
+		font-size: 3.9rem
+		line-height: 5.2rem
+
+		&--layout
+			top: 38.5%
+
+	.title-little
+		font-size: 4.9rem
+
 	.column
 		&--right
 			padding: 2.7rem 2rem 3rem 2.8rem
@@ -71,15 +105,15 @@
 			left: .35rem
 			bottom: .2rem
 
-			&:after
-				top: 2.1rem
-				left: 1.7rem
-
-			&:before
-				top: 7px
-				right: 13px
-
 			&:hover
+				&:after
+					top: 2.1rem
+					left: 1.7rem
+
+				&:before
+					top: 6px
+					right: 13px
+
 				.lens
 					top: 18px
 					left: 15px
@@ -158,40 +192,6 @@
 		&--circle
 			top: .4rem
 			left: 0.2rem
-
-	.title
-		line-height: 5.4rem
-
-	.title-big
-		font-size: 8.7rem
-
-		&--layout
-			width: 33rem
-
-	.title-large 
-		font-size: 7.8rem
-		letter-spacing: 0
-
-	.title-medium
-		font-size: 6rem
-
-	.title-middle
-		font-size: 5.4rem
-		line-height: 5.7rem
-
-		&--layout
-			width: 25.5rem
-			padding-top: 5.6rem
-
-	.title-small
-		font-size: 3.9rem
-		line-height: 5.2rem
-
-		&--layout
-			top: 38.5%
-
-	.title-little
-		font-size: 4.9rem
 
 	.arrow
 		top: 18.4rem
@@ -541,9 +541,15 @@
 
 @media screen and (max-width: 870px)
 	.content-layout
-
 		.main-slide
 			background-position-x: 75%
+
+	.icon
+		&--instagram
+			&:after
+				top: 2.1rem
+				left: 1.9rem
+
 	.gallery
 		&--item
 			flex: 1 1 11rem
@@ -562,13 +568,47 @@
 @media screen and (max-width: 680px)
 	html
 		font-size: 10px
+
+	.wrapper
+		background-color: #fff
+
+		&--layout
+			top: 16rem
+			left: 0
+
+	.menu
+		display: none
+
+	.menu-item
+		font-size: 2.4rem
+		display: inline-block
+		margin: 2% 15% 0 0
+
+	.menu-item-layout
+		background-color: #f6f6f6
+		border-top: 1px solid #ddd
+
+		&:last-of-type
+			display: block
+			background-color: #f0eded
+
+	.close-item
+		color: #8e8d8d
+		text-shadow: 1px 2px 2px #fff
+		text-transform: uppercase
+		margin: 2% 0 0
+
+	.main-slide
+		background: url(../img/background_mobile.jpg) no-repeat
+		height: 73.9%
+		padding: 45.4% 0 0 3.5%
 	
 	.content-layout
 		height: 100%
 
 		&--first
-			height: 1110px
-			margin-bottom: 5px
+			height: 1116px
+			margin-bottom: 1rem
 
 		&:last-of-type
 			margin-top: -4rem
@@ -606,8 +646,6 @@
 		font-size: 3.99rem
 		margin: 2.5rem 0 0 1rem
 
-
-
 	.slide-icons
 		&--first-page
 			display: flex
@@ -631,8 +669,11 @@
 		&__margin
 			margin: 15% 0 0 13%
 
-	.icon
+	#show-menu
+		position: relative
+		width: 10rem
 
+	.icon
 		&__mobile
 			width: 9%
 			float: left
@@ -644,16 +685,14 @@
 			display: block
 
 		&--menu,
-		&--close
-			transition: all 1s ease
-			
+		&--close		
 			path
 				fill: #ef2a34
 
 		&--close
 			width: 10rem
 			height: 5rem
-			position: relative
+			position: absolute
 			top: 3rem
 			right: 0
 
@@ -725,18 +764,19 @@
 			top: 2.3rem
 
 		&--youtube-footer
-			bottom: .5rem
+			bottom: 0
+			left: 1rem
 
 		&--vk-footer
 			width: 3rem
 			height: 3rem
-			bottom: .4rem
-			right: .3rem
+			bottom: 0
+			right: 4px
 
 		&--facebook-footer
 			width: 2.6rem
 			height: 2.6rem
-			top: 2px
+			top: 5px
 			right: 1px
 
 	.animation
@@ -744,17 +784,42 @@
 			top: .4rem
 			left: .1rem
 
-	.wrapper
-		background-color: #fff
+	.animation-3d__background
+		transform: none
+
+	.title
+		line-height: 5rem
+
+	.title-big
+		&--layout
+			font-size: 8.78rem
+			width: 30rem
+			height: 19rem
+			top: 6rem
+			left: 30%
+
+	.title-large
+		font-size: 7.8rem
+
+	.title-medium
+		margin-left: 3rem
+
+	.title-middle
+		width: 100%
+		font-size: 5.7rem
+		line-height: 6.1rem
+		padding: 6% 0 0 5%
+
+	.title-little
+		font-size: 4.94rem
+
+	.title-small
+		font-size: 4.1rem
+		line-height: 5.4rem
 
 		&--layout
-			top: 16rem
-			left: 0
-
-	.main-slide
-		background: url(../img/background_mobile.jpg) no-repeat
-		height: 74.2%
-		padding: 45.4% 0 0 3.5%
+			top: 46.5%
+			left: 7rem
 
 	.column
 		flex: 1 1 100%
@@ -779,7 +844,7 @@
 
 		&--right
 			height: 590px
-			padding: 2.4rem 3.1rem 0 3.1rem
+			padding: 2.4rem 1.4rem 0 3.1rem
 
 		&--right-third
 			height: 667px
@@ -793,72 +858,15 @@
 			order: 1
 			top: 3rem
 
-		&.animated--right.animated__delay
+		.animated--right
 			order: 2
 			z-index: 2
-
-	.animation-3d__background
-		transform: none
-
-	.animated
-		&--left,
-		&--right
-			animation: none
-	
-	.menu
-		display: none
-
-	.menu-item
-		font-size: 2.4rem
-		display: inline-block
-		margin: 2% 15% 0 0
-
-	.menu-item-layout
-		background-color: #f6f6f6
-		border-top: 1px solid #eee
-
-		&:last-of-type
-			display: block
-
-	.close-item
-		margin: 2% 0 0
-
-	.title
-		line-height: 5rem
-
-	.title-big
-		&--layout
-			font-size: 8.78rem
-			width: 30rem
-			height: 19rem
-			top: 6rem
-			left: 30%
-
-	.title-large
-		font-size: 7.8rem
-
-	.title-middle
-		width: 100%
-		font-size: 5.7rem
-		line-height: 6.1rem
-		padding: 6% 0 0 5%
-
-	.title-little
-		font-size: 4.94rem
-
-	.title-small
-		font-size: 4.1rem
-		line-height: 5.4rem
-
-		&--layout
-			top: 46.5%
-			left: 7rem
 
 	.button
 		width: 21.5rem
 		height: 2rem
 		font-size: 2.21rem
-		left: 56%
+		left: 58%
 		bottom: 18.8%
 
 		&--red
@@ -867,7 +875,7 @@
 
 		&--fourth
 			bottom: 13.6%
-			left: 33.5%
+			left: 34.5%
 
 	.arrow
 		left: 16rem
@@ -888,12 +896,14 @@
 			margin: .3rem 1rem .4rem -.4rem
 
 	.about
+		margin: 7.7% 9% 0 6.66%
+
 		&--layout
 			padding: 0  0 17.5% 0
 			height: 29rem
 			background-size: 39%
-			background-position-x: 327px
-			background-position-y: 137px
+			background-position-x: 329px
+			background-position-y: 138px
 
 	.slide-information
 		width: 28rem
@@ -904,28 +914,28 @@
 		left: 2.5rem
 		margin: 0
 
-	.locaion
-		height: 35.7rem
-		background-size: 87%
-		top: 6rem
-		padding-bottom: 4rem
-		background-position-x: 46%
-
+	.location
+		height: 35rem
+		background-size: 90%
+		top: 5.9rem
+		left: 1rem
+		padding-bottom: 5rem
+		
 	.footer
 		height: 8.5rem
 
 	.footer-item
-		width: 27rem
+		width: 24rem
 
 		&--left
 			padding: 1.3rem 0 0
 
 		&--right
-			width: 36rem
+			width: 58%
 
 	.copyright
 		font-size: 1.6rem
-		margin: 5.5% 0 0 23%
+		margin: 6.5% 0 0 25%
 
 		&--item
 			display: none
@@ -935,9 +945,8 @@
 		width: 9rem
 		padding: 2.55rem 0 2.5rem
 
-		&--youtube,
-		&--planet
-			width: 8.9rem
+		&--youtube
+			width: 7rem
 
 		&--planet
 			&:before
@@ -1049,8 +1058,6 @@
 	.location
 		padding-top: 7rem
 
-
-
 @media screen and (min-width: 356px) and (max-width: 400px)
 	html
 		font-size: 5px
@@ -1066,6 +1073,13 @@
 	html
 		font-size: 4px
 
+	.content-layout
+		&--first
+			height: 550px
+
+		.main-slide
+			background-size: 100%
+
 	.column
 		height: 320px
 
@@ -1075,13 +1089,6 @@
 		&--left-fourth
 			top: -8rem
 			height: 347px
-
-	.content-layout
-		&--first
-			height: 550px
-
-		.main-slide
-			background-size: 100%
 
 @media screen and (min-width: 320px) and (max-width: 400px)
 	.gallery

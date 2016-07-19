@@ -99,24 +99,24 @@
     display: block;
     position: relative;
     margin: 0 auto; }
-  .icon--menu, .icon--close {
+  .icon__menu, .icon__close {
     display: none; }
-  .icon--insta {
+  .icon__insta {
     background: url(../img/instagram.png) no-repeat; }
-  .icon--box {
+  .icon__box {
     background: url(../img/box.png) no-repeat left -0.39rem;
     height: 5.6rem;
     margin: 0 auto .5rem; }
-  .icon--map {
+  .icon__map {
     background: url(../img/map.png) no-repeat 0.2rem 1rem;
     width: 5.9rem;
     height: 5.6rem; }
-  .icon--instagram {
+  .icon__instagram {
     background: url(../img/instagram_color.png) no-repeat;
     width: 6rem;
     height: 6rem;
     background-size: 100%; }
-    .icon--instagram:after {
+    .icon__instagram:after {
       content: '';
       width: .5rem;
       height: .5rem;
@@ -126,7 +126,7 @@
       left: 2.2rem;
       border-radius: 5rem;
       z-index: 1; }
-    .icon--instagram:hover:before {
+    .icon__instagram:hover:before {
       content: '';
       width: .6rem;
       height: .6rem;
@@ -141,7 +141,7 @@
               animation: flash 0.4s 2 cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
       -webkit-animation-fill-mode: none;
               animation-fill-mode: none; }
-    .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+    .icon__instagram:hover .lens, .icon__instagram:hover .flash {
       content: '';
       background-color: #186c98;
       width: 2rem;
@@ -150,7 +150,7 @@
       position: absolute;
       top: 23px;
       left: 19px; }
-      .icon--instagram:hover .lens:before, .icon--instagram:hover .flash:before {
+      .icon__instagram:hover .lens:before, .icon__instagram:hover .flash:before {
         content: '';
         width: .3rem;
         height: .3rem;
@@ -159,7 +159,7 @@
         top: 8px;
         left: 9px;
         border-radius: 5rem; }
-      .icon--instagram:hover .lens:after, .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .lens:after, .icon__instagram:hover .flash:after {
         content: '';
         width: 1rem;
         height: 1rem;
@@ -168,7 +168,7 @@
         top: 5px;
         left: 5px;
         border-radius: 5rem; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       width: .3rem;
       height: .2rem;
       background-color: #FFF149;
@@ -176,7 +176,7 @@
       top: 11px;
       left: 10px;
       opacity: 0; }
-      .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .flash:after {
         content: '';
         width: .5rem;
         height: .5rem;
@@ -187,37 +187,37 @@
         opacity: 0;
         border-radius: 5rem;
         box-shadow: 1px 1px 11px 12px rgba(255, 248, 165, 0.91); }
-    .icon--instagram:hover .animated--flash {
+    .icon__instagram:hover .animated--flash {
       -webkit-animation: flash .3s ease-out 1s alternate;
               animation: flash .3s ease-out 1s alternate; }
-      .icon--instagram:hover .animated--flash:after {
+      .icon__instagram:hover .animated--flash:after {
         -webkit-animation: flash .3s ease-out 1.2s alternate;
                 animation: flash .3s ease-out 1.2s alternate; }
-    .icon--instagram:hover .animated--lens {
+    .icon__instagram:hover .animated--lens {
       -webkit-animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
               animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
       -webkit-transform: scale3d(0, 0, 1);
               transform: scale3d(0, 0, 1); }
-      .icon--instagram:hover .animated--lens:after {
+      .icon__instagram:hover .animated--lens:after {
         -webkit-animation: notrasform-lens .1s ease-out 1.3s;
                 animation: notrasform-lens .1s ease-out 1.3s;
         -webkit-animation-fill-mode: both;
                 animation-fill-mode: both;
         -webkit-transform: scale3d(0, 0, 1);
                 transform: scale3d(0, 0, 1); }
-  .icon--hearth {
+  .icon__hearth {
     background: url(../img/hearth.png) no-repeat;
     width: 6.7rem;
     height: 6.5rem;
     margin: .7rem auto; }
-    .icon--hearth:hover {
+    .icon__hearth:hover {
       -webkit-animation: background .8s linear alternate;
               animation: background .8s linear alternate;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards; }
-  .icon--prize {
+  .icon__prize {
     background: url(../img/prize.png) no-repeat 0.3rem top;
     width: 6.5rem;
     height: 6.8rem;
@@ -225,12 +225,12 @@
     right: .2rem;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out; }
-    .icon--prize:hover {
+    .icon__prize:hover {
       -webkit-animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
               animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards; }
-  .icon--circle {
+  .icon__circle {
     width: 12.4rem;
     height: 9.6rem;
     padding: 2.8rem 0 0; }
@@ -246,10 +246,10 @@
   .icon--facebook-inner {
     width: 6.4rem;
     height: 6.4rem; }
-  .icon--facebook-footer {
+  .icon__facebook-footer {
     width: 2.8rem;
     height: 2.8rem; }
-    .icon--facebook-footer path {
+    .icon__facebook-footer path {
       fill: #fff; }
   .icon--vk-layout {
     width: 10.8rem;
@@ -263,12 +263,12 @@
     width: 6.2rem;
     height: 6.2rem;
     padding-top: 2.1rem; }
-  .icon--vk-footer {
+  .icon__vk-footer {
     width: 3.4rem;
     height: 3.4rem;
     bottom: .7rem;
     right: .2rem; }
-    .icon--vk-footer path {
+    .icon__vk-footer path {
       fill: #fff; }
   .icon--inst-layout {
     width: 8.3rem;
@@ -282,12 +282,12 @@
     width: 4.5rem;
     height: 4.5rem;
     top: 2rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     width: 3.7rem;
     height: 3.7rem;
     bottom: .8rem;
     left: .19rem; }
-    .icon--youtube-footer path {
+    .icon__youtube-footer path {
       fill: #fff; }
 
 .button {
@@ -308,7 +308,7 @@
   transition: background 1s ease; }
   .button:hover {
     background: rgba(0, 0, 0, 0.21); }
-  .button--red {
+  .button__red {
     background: #f53612;
     bottom: 14%; }
   .button--fourth {

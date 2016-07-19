@@ -1,11 +1,11 @@
 /*Animation*/
-.animated--left {
+.animated__left {
   -webkit-animation: timing-left 0.5s linear normal;
           animation: timing-left 0.5s linear normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.animated--right {
+.animated__right {
   -webkit-animation: timing-right 0.5s linear normal;
           animation: timing-right 0.5s linear normal;
   -webkit-animation-fill-mode: forwards;

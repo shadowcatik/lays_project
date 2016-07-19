@@ -1,16 +1,17 @@
 /*Header*/
 
-.header-layout
-	width: 15rem
-	height: 100%
-	background-color: #f6f6f6
-	position: fixed
-	top: 0
-	left: 0
-	z-index: 1
+.header
+	&--layout
+		width: 15rem
+		height: 100%
+		background-color: #f6f6f6
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 1
 
-.header-logo
-	padding: 2.4rem 2.7rem 0 2.8rem
+	&--menu
+		padding: 2.4rem 2.7rem 0 2.8rem
 
 .logo
 	background: url(../img/logo.png) no-repeat
@@ -36,31 +37,32 @@
 	color: #f73934
 	margin-bottom: 1.8rem
 
-.header-menu
+.menu
 	margin-top: 6.2rem
 	position: absolute
 	left: 0
 	width: 100%
 
-.menu-link
-	cursor: pointer
-	text-decoration: none
-	transition: background 1s ease
+	&--link
+		cursor: pointer
+		text-decoration: none
+		transition: background 1s ease
 
-	&:hover
-		background-color: #fff
-		border-top: .1rem solid #ddd
-		border-bottom: .1rem solid #ddd
+		&:hover
+			background-color: #fff
+			border-top: .1rem solid #ddd
+			border-bottom: .1rem solid #ddd
 
-.menu-item-layout
-	display: block
-	width: 100%
-	height: 6.8rem
-	text-align: center
-	padding: 2.5rem 0
+	&--item-layout
+		display: block
+		width: 100%
+		height: 6.8rem
+		text-align: center
+		padding: 2.5rem 0
 
-	&:last-of-type
-		display: none
-.menu-item
-	font-size: 1.4rem
-	color: #555555
+		&:last-of-type
+			display: none
+			
+	&--item
+		font-size: 1.4rem
+		color: #555555

@@ -74,32 +74,35 @@
   .column--right-fourth:after {
     left: -14.5rem;
     top: 32%; }
-  .icon--circle {
+  .icon__circle {
     width: 11rem;
     height: 8.1rem; }
-  .icon--instagram {
+  .icon__instagram {
     background-size: 85%;
     left: .35rem;
     bottom: .2rem; }
-    .icon--instagram:hover:after {
+    .icon__instagram:after {
       top: 2.1rem;
       left: 1.7rem; }
-    .icon--instagram:hover:before {
-      top: 6px;
-      right: 13px; }
-    .icon--instagram:hover .lens {
+    .icon__instagram:hover:after {
+      top: 2.1rem;
+      left: 1.7rem; }
+    .icon__instagram:hover:before {
+      top: 2.1rem;
+      right: 1.9rem; }
+    .icon__instagram:hover .lens {
       top: 18px;
       left: 15px; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       top: 8px;
       left: 8px; }
-      .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .flash:after {
         left: -4px; }
-  .icon--hearth {
+  .icon__hearth {
     background-size: 89%;
     margin: .3rem auto;
     left: .7rem; }
-  .icon--prize {
+  .icon__prize {
     background: url(../img/prize.png) no-repeat 0.3rem top;
     background-size: 84%;
     left: .2rem; }
@@ -129,7 +132,7 @@
     height: 3.5rem;
     top: 2.25rem;
     right: .2rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     width: 3.3rem;
     height: 3.3rem;
     bottom: .7rem; }
@@ -186,7 +189,7 @@
     height: 3.5rem;
     width: 9rem;
     padding: 3.55rem 0 2rem; }
-    .social--planet:before {
+    .social__planet:before {
       top: 26%;
       left: 23%; } }
 
@@ -232,17 +235,17 @@
       width: 23rem; }
   .title-little {
     font-size: 2.9rem; }
-  .icon--circle {
+  .icon__circle {
     width: 10rem;
     height: 7.1rem; }
-  .icon--instagram:hover:before {
+  .icon__instagram:hover:before {
     top: 7px;
     right: 14px; }
-  .icon--hearth {
+  .icon__hearth {
     background-size: 86%;
     margin: 0 auto;
     left: .5rem; }
-  .icon--prize {
+  .icon__prize {
     background-size: 74%;
     left: .5rem; }
   .icon--facebook-layout {
@@ -306,7 +309,7 @@
             flex: 1 1 11rem; }
   .title-big--layout {
     bottom: 3%; }
-  .button--red {
+  .button__red {
     bottom: 7%; }
   .button--fourth {
     bottom: 2.3%; }
@@ -315,12 +318,16 @@
     .footer-item--right {
       width: 36.5rem; } }
 
+@media screen and (max-width: 1060px) and (min-width: 1024px) {
+  .about--layout {
+    padding: 0 0 8.5% 47%; } }
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 8px; }
-  .header-layout {
+  .header--layout {
     width: 11rem; }
-  .header-logo {
+  .header--menu {
     padding: 2.4rem 0 0 .5rem; }
   .wrapper--layout {
     left: 11rem; }
@@ -335,13 +342,13 @@
   .icon {
     height: 100%;
     margin: 0 auto; }
-    .icon--box, .icon--insta, .icon--map {
+    .icon__box, .icon__insta, .icon__map {
       width: 52%;
       height: 100%; }
-    .icon--box {
+    .icon__box {
       background-position-x: 0;
       background-position-y: -.4rem; }
-    .icon--map {
+    .icon__map {
       width: 6.5rem;
       background-position-x: 0;
       background-position-y: 0; }
@@ -352,7 +359,7 @@
             flex: 1 1 14rem; }
   .location {
     height: 35rem; }
-  .social--planet:before {
+  .social__planet:before {
     background-size: 100%; } }
 
 @media screen and (max-width: 980px) {
@@ -395,7 +402,7 @@
   .social {
     width: 8rem;
     padding: 2.55rem 0 1rem; }
-    .social--planet:before {
+    .social__planet:before {
       background-size: 96%;
       top: 20%;
       left: 20%; } }
@@ -403,7 +410,7 @@
 @media screen and (max-width: 870px) {
   .content-layout .main-slide {
     background-position-x: 75%; }
-  .icon--instagram:after {
+  .icon__instagram:hover:after {
     top: 2.1rem;
     left: 1.9rem; }
   .gallery--item {
@@ -411,6 +418,11 @@
     -webkit-flex: 1 1 11rem;
         -ms-flex: 1 1 11rem;
             flex: 1 1 11rem; } }
+
+@media screen and (max-width: 810px) and (min-width: 770px) {
+  .about--layout {
+    padding: 0 0 8.5% 40%;
+    background-size: 40%; } }
 
 @media screen and (max-width: 770px) {
   .about--layout {
@@ -424,10 +436,23 @@
         -ms-flex: 1 1 10rem;
             flex: 1 1 10rem; } }
 
+@media screen and (min-width: 681px) and (max-width: 800px) {
+  .location {
+    height: 27rem; } }
+
+@media screen and (min-width: 681px) and (max-width: 700px) {
+  .title-middle {
+    font-size: 2.5rem;
+    padding: 0; }
+    .title-middle--layout {
+      width: 22.5rem; } }
+
 @media screen and (min-width: 681px) and (max-width: 1960px) {
   .menu .animated--left, .menu .animated--right {
     -webkit-animation: none;
-            animation: none; } }
+            animation: none; }
+  .icon__close, .icon__menu {
+    display: none !important; } }
 
 @media screen and (max-width: 680px) {
   html {
@@ -439,17 +464,17 @@
       left: 0; }
   .menu {
     display: none; }
-  .menu-item {
-    font-size: 2.4rem;
-    display: inline-block;
-    margin: 2% 15% 0 0; }
-  .menu-item-layout {
-    background-color: #f6f6f6;
-    border-top: 1px solid #ddd; }
-    .menu-item-layout:last-of-type {
-      display: block;
-      background-color: #f0eded; }
-  .close-item {
+    .menu--item {
+      font-size: 2.4rem;
+      display: inline-block;
+      margin: 2% 15% 0 0; }
+    .menu--item-layout {
+      background-color: #f6f6f6;
+      border-top: 1px solid #ddd; }
+      .menu--item-layout:last-of-type {
+        display: block;
+        background-color: #f0eded; }
+  .close--item {
     color: #8e8d8d;
     text-shadow: 1px 2px 2px #fff;
     text-transform: uppercase;
@@ -464,12 +489,12 @@
       height: 1114px; }
     .content-layout:last-of-type {
       margin-top: -4rem; }
-  .header-layout__mobile {
+  .header--layout__mobile {
     height: 10rem;
     width: 100%;
     padding: 3rem 0;
     z-index: 3; }
-  .header-logo__mobile {
+  .header--menu__mobile {
     padding: 0 4rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -482,7 +507,7 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .header-menu {
+  .menu {
     margin: 0;
     top: 16rem; }
   .logo {
@@ -525,43 +550,46 @@
     width: 9%;
     float: left;
     margin-left: 9%; }
-  .icon--menu {
+  .icon__menu {
     width: 10rem;
     height: 10rem;
     display: block; }
-  .icon--menu path, .icon--close path {
+  .icon__menu path, .icon__close path {
     fill: #ef2a34; }
-  .icon--close {
+  .icon__close {
     width: 10rem;
     height: 5rem;
     position: absolute;
     top: 3rem;
     right: 0; }
-  .icon--circle {
+  .icon__circle {
     width: 13rem;
     height: 10rem; }
   .icon--item {
     margin: 11% 0 0 0; }
-  .icon--hearth {
+  .icon__hearth {
     top: 1.2rem; }
-  .icon--hearth, .icon--prize {
+  .icon__hearth, .icon__prize {
     left: 0;
     background-size: 95%; }
-  .icon--prize {
+  .icon__prize {
     top: 0; }
-  .icon--instagram {
+  .icon__instagram {
     background-size: 96%;
     top: 4px; }
-    .icon--instagram:hover:before {
+    .icon__instagram:after {
+      top: 2.5rem;
+      left: 2.1rem; }
+    .icon__instagram:hover:before {
       top: 8px;
       right: 10px; }
-    .icon--instagram:hover:after {
-      top: 2.6rem;
-      left: 2.2rem; }
-    .icon--instagram:hover .lens {
+    .icon__instagram:hover:after {
+      top: 2.5rem;
+      left: 2.1rem; }
+    .icon__instagram:hover .lens {
       top: 23px;
       left: 20px; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       top: 10px;
       left: 9px; }
   .icon--facebook-layout {
@@ -591,19 +619,19 @@
     height: 4.4rem;
     right: 0;
     top: 2.3rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     bottom: 0; }
-  .icon--vk-footer {
+  .icon__vk-footer {
     width: 3rem;
     height: 3rem;
     bottom: 0;
     right: 4px; }
-  .icon--facebook-footer {
+  .icon__facebook-footer {
     width: 2.6rem;
     height: 2.6rem;
     top: 5px;
     right: 1px; }
-  .animation--circle {
+  .animation__circle {
     top: .4rem;
     left: .1rem; }
   .animation-3d__background {
@@ -692,7 +720,7 @@
     font-size: 2.21rem;
     left: 56%;
     bottom: 18.8%; }
-    .button--red {
+    .button__red {
       left: 33%;
       bottom: 15.3%; }
     .button--fourth {
@@ -753,9 +781,9 @@
     height: 3.5rem;
     width: 9rem;
     padding: 2.55rem 0 2.5rem; }
-    .social--youtube {
+    .social__youtube {
       width: 8.9rem; }
-    .social--planet:before {
+    .social__planet:before {
       background-size: 103%; } }
 
 @media screen and (max-width: 590px) {
@@ -880,24 +908,24 @@
     height: 32rem; }
   .icon__mobile {
     background-size: 60%; }
-  .icon--instagram:after {
+  .icon__instagram:after {
     top: 10px;
     left: 9px; }
-  .icon--instagram:hover:before {
+  .icon__instagram:hover:before {
     top: 4px;
     right: 4px; }
-  .icon--instagram:hover .lens {
+  .icon__instagram:hover .lens {
     top: 10px;
     left: 8px; }
-    .icon--instagram:hover .lens:before {
+    .icon__instagram:hover .lens:before {
       top: 2px;
       left: 5px; }
-    .icon--instagram:hover .lens:after {
+    .icon__instagram:hover .lens:after {
       left: 0;
       top: 0; }
-  .icon--instagram:hover .flash {
+  .icon__instagram:hover .flash {
     top: 4px;
     left: 4px; }
-    .icon--instagram:hover .flash:after {
+    .icon__instagram:hover .flash:after {
       left: 0;
       top: 0; } }

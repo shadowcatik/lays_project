@@ -20,7 +20,7 @@ html, body {
   font-family: 'GothamPro';
   color: #f73934;
   line-height: 6.1rem; }
-  .title--white {
+  .title__white {
     display: inline-block;
     background-color: #fff;
     padding: 0 1.6rem 0 .7rem;
@@ -76,7 +76,7 @@ html, body {
   margin: 0 auto; }
 
 /*Header*/
-.header-layout {
+.header--layout {
   width: 15rem;
   height: 100%;
   background-color: #f6f6f6;
@@ -85,7 +85,7 @@ html, body {
   left: 0;
   z-index: 1; }
 
-.header-logo {
+.header--menu {
   padding: 2.4rem 2.7rem 0 2.8rem; }
 
 .logo {
@@ -110,34 +110,31 @@ html, body {
   color: #f73934;
   margin-bottom: 1.8rem; }
 
-.header-menu {
+.menu {
   margin-top: 6.2rem;
   position: absolute;
   left: 0;
   width: 100%; }
-
-.menu-link {
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: background 1s ease;
-  transition: background 1s ease; }
-  .menu-link:hover {
-    background-color: #fff;
-    border-top: .1rem solid #ddd;
-    border-bottom: .1rem solid #ddd; }
-
-.menu-item-layout {
-  display: block;
-  width: 100%;
-  height: 6.8rem;
-  text-align: center;
-  padding: 2.5rem 0; }
-  .menu-item-layout:last-of-type {
-    display: none; }
-
-.menu-item {
-  font-size: 1.4rem;
-  color: #555555; }
+  .menu--link {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: background 1s ease;
+    transition: background 1s ease; }
+    .menu--link:hover {
+      background-color: #fff;
+      border-top: .1rem solid #ddd;
+      border-bottom: .1rem solid #ddd; }
+  .menu--item-layout {
+    display: block;
+    width: 100%;
+    height: 6.8rem;
+    text-align: center;
+    padding: 2.5rem 0; }
+    .menu--item-layout:last-of-type {
+      display: none; }
+  .menu--item {
+    font-size: 1.4rem;
+    color: #555555; }
 
 /*Main*/
 .wrapper {
@@ -240,24 +237,24 @@ html, body {
     display: block;
     position: relative;
     margin: 0 auto; }
-  .icon--menu, .icon--close {
+  .icon__menu, .icon__close {
     display: none; }
-  .icon--insta {
+  .icon__insta {
     background: url(../img/instagram.png) no-repeat; }
-  .icon--box {
+  .icon__box {
     background: url(../img/box.png) no-repeat left -0.39rem;
     height: 5.6rem;
     margin: 0 auto .5rem; }
-  .icon--map {
+  .icon__map {
     background: url(../img/map.png) no-repeat 0.2rem 1rem;
     width: 5.9rem;
     height: 5.6rem; }
-  .icon--instagram {
+  .icon__instagram {
     background: url(../img/instagram_color.png) no-repeat;
     width: 6rem;
     height: 6rem;
     background-size: 100%; }
-    .icon--instagram:after {
+    .icon__instagram:after {
       content: '';
       width: .5rem;
       height: .5rem;
@@ -267,7 +264,7 @@ html, body {
       left: 2.2rem;
       border-radius: 5rem;
       z-index: 1; }
-    .icon--instagram:hover:before {
+    .icon__instagram:hover:before {
       content: '';
       width: .6rem;
       height: .6rem;
@@ -282,7 +279,7 @@ html, body {
               animation: flash 0.4s 2 cubic-bezier(0.27, 0.62, 0.11, 0.99) normal;
       -webkit-animation-fill-mode: none;
               animation-fill-mode: none; }
-    .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+    .icon__instagram:hover .lens, .icon__instagram:hover .flash {
       content: '';
       background-color: #186c98;
       width: 2rem;
@@ -291,7 +288,7 @@ html, body {
       position: absolute;
       top: 23px;
       left: 19px; }
-      .icon--instagram:hover .lens:before, .icon--instagram:hover .flash:before {
+      .icon__instagram:hover .lens:before, .icon__instagram:hover .flash:before {
         content: '';
         width: .3rem;
         height: .3rem;
@@ -300,7 +297,7 @@ html, body {
         top: 8px;
         left: 9px;
         border-radius: 5rem; }
-      .icon--instagram:hover .lens:after, .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .lens:after, .icon__instagram:hover .flash:after {
         content: '';
         width: 1rem;
         height: 1rem;
@@ -309,7 +306,7 @@ html, body {
         top: 5px;
         left: 5px;
         border-radius: 5rem; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       width: .3rem;
       height: .2rem;
       background-color: #FFF149;
@@ -317,7 +314,7 @@ html, body {
       top: 11px;
       left: 10px;
       opacity: 0; }
-      .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .flash:after {
         content: '';
         width: .5rem;
         height: .5rem;
@@ -328,37 +325,37 @@ html, body {
         opacity: 0;
         border-radius: 5rem;
         box-shadow: 1px 1px 11px 12px rgba(255, 248, 165, 0.91); }
-    .icon--instagram:hover .animated--flash {
+    .icon__instagram:hover .animated--flash {
       -webkit-animation: flash .3s ease-out 1s alternate;
               animation: flash .3s ease-out 1s alternate; }
-      .icon--instagram:hover .animated--flash:after {
+      .icon__instagram:hover .animated--flash:after {
         -webkit-animation: flash .3s ease-out 1.2s alternate;
                 animation: flash .3s ease-out 1.2s alternate; }
-    .icon--instagram:hover .animated--lens {
+    .icon__instagram:hover .animated--lens {
       -webkit-animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
               animation: notrasform-lens 4s cubic-bezier(0.27, 0.62, 0, 0.96) alternate;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
       -webkit-transform: scale3d(0, 0, 1);
               transform: scale3d(0, 0, 1); }
-      .icon--instagram:hover .animated--lens:after {
+      .icon__instagram:hover .animated--lens:after {
         -webkit-animation: notrasform-lens .1s ease-out 1.3s;
                 animation: notrasform-lens .1s ease-out 1.3s;
         -webkit-animation-fill-mode: both;
                 animation-fill-mode: both;
         -webkit-transform: scale3d(0, 0, 1);
                 transform: scale3d(0, 0, 1); }
-  .icon--hearth {
+  .icon__hearth {
     background: url(../img/hearth.png) no-repeat;
     width: 6.7rem;
     height: 6.5rem;
     margin: .7rem auto; }
-    .icon--hearth:hover {
+    .icon__hearth:hover {
       -webkit-animation: background .8s linear alternate;
               animation: background .8s linear alternate;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards; }
-  .icon--prize {
+  .icon__prize {
     background: url(../img/prize.png) no-repeat 0.3rem top;
     width: 6.5rem;
     height: 6.8rem;
@@ -366,12 +363,12 @@ html, body {
     right: .2rem;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out; }
-    .icon--prize:hover {
+    .icon__prize:hover {
       -webkit-animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
               animation: transform 0.5s cubic-bezier(0.4, 0, 1, 1) normal;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards; }
-  .icon--circle {
+  .icon__circle {
     width: 12.4rem;
     height: 9.6rem;
     padding: 2.8rem 0 0; }
@@ -387,10 +384,10 @@ html, body {
   .icon--facebook-inner {
     width: 6.4rem;
     height: 6.4rem; }
-  .icon--facebook-footer {
+  .icon__facebook-footer {
     width: 2.8rem;
     height: 2.8rem; }
-    .icon--facebook-footer path {
+    .icon__facebook-footer path {
       fill: #fff; }
   .icon--vk-layout {
     width: 10.8rem;
@@ -404,12 +401,12 @@ html, body {
     width: 6.2rem;
     height: 6.2rem;
     padding-top: 2.1rem; }
-  .icon--vk-footer {
+  .icon__vk-footer {
     width: 3.4rem;
     height: 3.4rem;
     bottom: .7rem;
     right: .2rem; }
-    .icon--vk-footer path {
+    .icon__vk-footer path {
       fill: #fff; }
   .icon--inst-layout {
     width: 8.3rem;
@@ -423,12 +420,12 @@ html, body {
     width: 4.5rem;
     height: 4.5rem;
     top: 2rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     width: 3.7rem;
     height: 3.7rem;
     bottom: .8rem;
     left: .19rem; }
-    .icon--youtube-footer path {
+    .icon__youtube-footer path {
       fill: #fff; }
 
 .button {
@@ -449,7 +446,7 @@ html, body {
   transition: background 1s ease; }
   .button:hover {
     background: rgba(0, 0, 0, 0.21); }
-  .button--red {
+  .button__red {
     background: #f53612;
     bottom: 14%; }
   .button--fourth {
@@ -587,13 +584,13 @@ html, body {
   margin: 0 auto; }
 
 /*Animation*/
-.animated--left {
+.animated__left {
   -webkit-animation: timing-left 0.5s linear normal;
           animation: timing-left 0.5s linear normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.animated--right {
+.animated__right {
   -webkit-animation: timing-right 0.5s linear normal;
           animation: timing-right 0.5s linear normal;
   -webkit-animation-fill-mode: forwards;
@@ -851,14 +848,14 @@ html, body {
   transition: opacity 1s ease; }
   .social:hover {
     opacity: 1; }
-  .social--facebook {
+  .social__facebook {
     background-color: #326aa2; }
-  .social--vk {
+  .social__vk {
     background-color: #3479a8; }
-  .social--planet {
+  .social__planet {
     background-color: #edc012;
     position: relative; }
-    .social--planet:before {
+    .social__planet:before {
       content: '';
       background: url(data:image/jpeg;base64,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) no-repeat;
       width: 5.2rem;
@@ -866,7 +863,7 @@ html, body {
       position: absolute;
       top: 28%;
       left: 25%; }
-  .social--youtube {
+  .social__youtube {
     background-color: #c4070d; }
 
 @media screen and (max-width: 1960px) {
@@ -945,32 +942,35 @@ html, body {
   .column--right-fourth:after {
     left: -14.5rem;
     top: 32%; }
-  .icon--circle {
+  .icon__circle {
     width: 11rem;
     height: 8.1rem; }
-  .icon--instagram {
+  .icon__instagram {
     background-size: 85%;
     left: .35rem;
     bottom: .2rem; }
-    .icon--instagram:hover:after {
+    .icon__instagram:after {
       top: 2.1rem;
       left: 1.7rem; }
-    .icon--instagram:hover:before {
-      top: 6px;
-      right: 13px; }
-    .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+    .icon__instagram:hover:after {
+      top: 2.1rem;
+      left: 1.7rem; }
+    .icon__instagram:hover:before {
+      top: 2.1rem;
+      right: 1.9rem; }
+    .icon__instagram:hover .lens, .icon__instagram:hover .flash {
       top: 18px;
       left: 15px; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       top: 8px;
       left: 8px; }
-      .icon--instagram:hover .flash:after {
+      .icon__instagram:hover .flash:after {
         left: -4px; }
-  .icon--hearth {
+  .icon__hearth {
     background-size: 89%;
     margin: .3rem auto;
     left: .7rem; }
-  .icon--prize {
+  .icon__prize {
     background: url(../img/prize.png) no-repeat 0.3rem top;
     background-size: 84%;
     left: .2rem; }
@@ -1000,7 +1000,7 @@ html, body {
     height: 3.5rem;
     top: 2.25rem;
     right: .2rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     width: 3.3rem;
     height: 3.3rem;
     bottom: .7rem; }
@@ -1057,7 +1057,7 @@ html, body {
     height: 3.5rem;
     width: 9rem;
     padding: 3.55rem 0 2rem; }
-    .social--planet:before {
+    .social__planet:before {
       top: 26%;
       left: 23%; } }
 
@@ -1103,17 +1103,17 @@ html, body {
       width: 23rem; }
   .title-little {
     font-size: 2.9rem; }
-  .icon--circle {
+  .icon__circle {
     width: 10rem;
     height: 7.1rem; }
-  .icon--instagram:hover:before {
+  .icon__instagram:hover:before {
     top: 7px;
     right: 14px; }
-  .icon--hearth {
+  .icon__hearth {
     background-size: 86%;
     margin: 0 auto;
     left: .5rem; }
-  .icon--prize {
+  .icon__prize {
     background-size: 74%;
     left: .5rem; }
   .icon--facebook-layout {
@@ -1177,7 +1177,7 @@ html, body {
             flex: 1 1 11rem; }
   .title-big--layout {
     bottom: 3%; }
-  .button--red {
+  .button__red {
     bottom: 7%; }
   .button--fourth {
     bottom: 2.3%; }
@@ -1186,12 +1186,16 @@ html, body {
     .footer-item--right {
       width: 36.5rem; } }
 
+@media screen and (max-width: 1060px) and (min-width: 1024px) {
+  .about--layout {
+    padding: 0 0 8.5% 47%; } }
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 8px; }
-  .header-layout {
+  .header--layout {
     width: 11rem; }
-  .header-logo {
+  .header--menu {
     padding: 2.4rem 0 0 .5rem; }
   .wrapper--layout {
     left: 11rem; }
@@ -1206,13 +1210,13 @@ html, body {
   .icon {
     height: 100%;
     margin: 0 auto; }
-    .icon--box, .icon--insta, .icon--map {
+    .icon__box, .icon__insta, .icon__map {
       width: 52%;
       height: 100%; }
-    .icon--box {
+    .icon__box {
       background-position-x: 0;
       background-position-y: -.4rem; }
-    .icon--map {
+    .icon__map {
       width: 6.5rem;
       background-position-x: 0;
       background-position-y: 0; }
@@ -1223,7 +1227,7 @@ html, body {
             flex: 1 1 14rem; }
   .location {
     height: 35rem; }
-  .social--planet:before {
+  .social__planet:before {
     background-size: 100%; } }
 
 @media screen and (max-width: 980px) {
@@ -1266,7 +1270,7 @@ html, body {
   .social {
     width: 8rem;
     padding: 2.55rem 0 1rem; }
-    .social--planet:before {
+    .social__planet:before {
       background-size: 96%;
       top: 20%;
       left: 20%; } }
@@ -1274,7 +1278,7 @@ html, body {
 @media screen and (max-width: 870px) {
   .content-layout .main-slide {
     background-position-x: 75%; }
-  .icon--instagram:after {
+  .icon__instagram:hover:after {
     top: 2.1rem;
     left: 1.9rem; }
   .gallery--item {
@@ -1282,6 +1286,11 @@ html, body {
     -webkit-flex: 1 1 11rem;
         -ms-flex: 1 1 11rem;
             flex: 1 1 11rem; } }
+
+@media screen and (max-width: 810px) and (min-width: 770px) {
+  .about--layout {
+    padding: 0 0 8.5% 40%;
+    background-size: 40%; } }
 
 @media screen and (max-width: 770px) {
   .about--layout {
@@ -1295,10 +1304,23 @@ html, body {
         -ms-flex: 1 1 10rem;
             flex: 1 1 10rem; } }
 
+@media screen and (min-width: 681px) and (max-width: 800px) {
+  .location {
+    height: 27rem; } }
+
+@media screen and (min-width: 681px) and (max-width: 700px) {
+  .title-middle {
+    font-size: 2.5rem;
+    padding: 0; }
+    .title-middle--layout {
+      width: 22.5rem; } }
+
 @media screen and (min-width: 681px) and (max-width: 1960px) {
   .menu .animated--left, .menu .animated--right {
     -webkit-animation: none;
-            animation: none; } }
+            animation: none; }
+  .icon__close, .icon__menu {
+    display: none !important; } }
 
 @media screen and (max-width: 680px) {
   html {
@@ -1310,17 +1332,17 @@ html, body {
       left: 0; }
   .menu {
     display: none; }
-  .menu-item {
-    font-size: 2.4rem;
-    display: inline-block;
-    margin: 2% 15% 0 0; }
-  .menu-item-layout {
-    background-color: #f6f6f6;
-    border-top: 1px solid #ddd; }
-    .menu-item-layout:last-of-type {
-      display: block;
-      background-color: #f0eded; }
-  .close-item {
+    .menu--item {
+      font-size: 2.4rem;
+      display: inline-block;
+      margin: 2% 15% 0 0; }
+    .menu--item-layout {
+      background-color: #f6f6f6;
+      border-top: 1px solid #ddd; }
+      .menu--item-layout:last-of-type {
+        display: block;
+        background-color: #f0eded; }
+  .close--item {
     color: #8e8d8d;
     text-shadow: 1px 2px 2px #fff;
     text-transform: uppercase;
@@ -1335,12 +1357,12 @@ html, body {
       height: 1114px; }
     .content-layout:last-of-type {
       margin-top: -4rem; }
-  .header-layout__mobile {
+  .header--layout__mobile {
     height: 10rem;
     width: 100%;
     padding: 3rem 0;
     z-index: 3; }
-  .header-logo__mobile {
+  .header--menu__mobile {
     padding: 0 4rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1353,7 +1375,7 @@ html, body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .header-menu {
+  .menu {
     margin: 0;
     top: 16rem; }
   .logo {
@@ -1396,43 +1418,46 @@ html, body {
     width: 9%;
     float: left;
     margin-left: 9%; }
-  .icon--menu {
+  .icon__menu {
     width: 10rem;
     height: 10rem;
     display: block; }
-  .icon--menu path, .icon--close path {
+  .icon__menu path, .icon__close path {
     fill: #ef2a34; }
-  .icon--close {
+  .icon__close {
     width: 10rem;
     height: 5rem;
     position: absolute;
     top: 3rem;
     right: 0; }
-  .icon--circle {
+  .icon__circle {
     width: 13rem;
     height: 10rem; }
   .icon--item {
     margin: 11% 0 0 0; }
-  .icon--hearth {
+  .icon__hearth {
     top: 1.2rem; }
-  .icon--hearth, .icon--prize {
+  .icon__hearth, .icon__prize {
     left: 0;
     background-size: 95%; }
-  .icon--prize {
+  .icon__prize {
     top: 0; }
-  .icon--instagram {
+  .icon__instagram {
     background-size: 96%;
     top: 4px; }
-    .icon--instagram:hover:before {
+    .icon__instagram:after {
+      top: 2.5rem;
+      left: 2.1rem; }
+    .icon__instagram:hover:before {
       top: 8px;
       right: 10px; }
-    .icon--instagram:hover:after {
-      top: 2.6rem;
-      left: 2.2rem; }
-    .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+    .icon__instagram:hover:after {
+      top: 2.5rem;
+      left: 2.1rem; }
+    .icon__instagram:hover .lens, .icon__instagram:hover .flash {
       top: 23px;
       left: 20px; }
-    .icon--instagram:hover .flash {
+    .icon__instagram:hover .flash {
       top: 10px;
       left: 9px; }
   .icon--facebook-layout {
@@ -1462,19 +1487,19 @@ html, body {
     height: 4.4rem;
     right: 0;
     top: 2.3rem; }
-  .icon--youtube-footer {
+  .icon__youtube-footer {
     bottom: 0; }
-  .icon--vk-footer {
+  .icon__vk-footer {
     width: 3rem;
     height: 3rem;
     bottom: 0;
     right: 4px; }
-  .icon--facebook-footer {
+  .icon__facebook-footer {
     width: 2.6rem;
     height: 2.6rem;
     top: 5px;
     right: 1px; }
-  .animation--circle {
+  .animation__circle {
     top: .4rem;
     left: .1rem; }
   .animation-3d__background {
@@ -1563,7 +1588,7 @@ html, body {
     font-size: 2.21rem;
     left: 56%;
     bottom: 18.8%; }
-    .button--red {
+    .button__red {
       left: 33%;
       bottom: 15.3%; }
     .button--fourth {
@@ -1624,9 +1649,9 @@ html, body {
     height: 3.5rem;
     width: 9rem;
     padding: 2.55rem 0 2.5rem; }
-    .social--youtube {
+    .social__youtube {
       width: 8.9rem; }
-    .social--planet:before {
+    .social__planet:before {
       background-size: 103%; } }
 
 @media screen and (max-width: 590px) {
@@ -1751,24 +1776,24 @@ html, body {
     height: 32rem; }
   .icon__mobile {
     background-size: 60%; }
-  .icon--instagram:after {
+  .icon__instagram:after {
     top: 10px;
     left: 9px; }
-  .icon--instagram:hover:before {
+  .icon__instagram:hover:before {
     top: 4px;
     right: 4px; }
-  .icon--instagram:hover .lens, .icon--instagram:hover .flash {
+  .icon__instagram:hover .lens, .icon__instagram:hover .flash {
     top: 10px;
     left: 8px; }
-    .icon--instagram:hover .lens:before, .icon--instagram:hover .flash:before {
+    .icon__instagram:hover .lens:before, .icon__instagram:hover .flash:before {
       top: 2px;
       left: 5px; }
-    .icon--instagram:hover .lens:after, .icon--instagram:hover .flash:after {
+    .icon__instagram:hover .lens:after, .icon__instagram:hover .flash:after {
       left: 0;
       top: 0; }
-  .icon--instagram:hover .flash {
+  .icon__instagram:hover .flash {
     top: 4px;
     left: 4px; }
-    .icon--instagram:hover .flash:after {
+    .icon__instagram:hover .flash:after {
       left: 0;
       top: 0; } }

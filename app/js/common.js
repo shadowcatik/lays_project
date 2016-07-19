@@ -10,13 +10,13 @@ $(function(){
 	
 	$(document).ready(function() {
 	    $('#show-menu').click(function() {
-	      $('.menu, .icon--close').fadeIn();
-	      $('.icon--menu').fadeOut();
+	      $('.menu, .icon__close').fadeIn();
+	      $('.icon__menu').fadeOut();
 	      return false;
 	    });
 	    $('.close').click(function() {
-	      $('.menu, .icon--close').fadeOut();
-	      $('.icon--menu').fadeIn();
+	      $('.menu, .icon__close').fadeOut();
+	      $('.icon__menu').fadeIn();
 	      return false;
 	    });
 	});

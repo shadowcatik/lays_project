@@ -1,5 +1,5 @@
 /*Header*/
-.header-layout {
+.header--layout {
   width: 15rem;
   height: 100%;
   background-color: #f6f6f6;
@@ -8,7 +8,7 @@
   left: 0;
   z-index: 1; }
 
-.header-logo {
+.header--menu {
   padding: 2.4rem 2.7rem 0 2.8rem; }
 
 .logo {
@@ -33,31 +33,28 @@
   color: #f73934;
   margin-bottom: 1.8rem; }
 
-.header-menu {
+.menu {
   margin-top: 6.2rem;
   position: absolute;
   left: 0;
   width: 100%; }
-
-.menu-link {
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: background 1s ease;
-  transition: background 1s ease; }
-  .menu-link:hover {
-    background-color: #fff;
-    border-top: .1rem solid #ddd;
-    border-bottom: .1rem solid #ddd; }
-
-.menu-item-layout {
-  display: block;
-  width: 100%;
-  height: 6.8rem;
-  text-align: center;
-  padding: 2.5rem 0; }
-  .menu-item-layout:last-of-type {
-    display: none; }
-
-.menu-item {
-  font-size: 1.4rem;
-  color: #555555; }
+  .menu--link {
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: background 1s ease;
+    transition: background 1s ease; }
+    .menu--link:hover {
+      background-color: #fff;
+      border-top: .1rem solid #ddd;
+      border-bottom: .1rem solid #ddd; }
+  .menu--item-layout {
+    display: block;
+    width: 100%;
+    height: 6.8rem;
+    text-align: center;
+    padding: 2.5rem 0; }
+    .menu--item-layout:last-of-type {
+      display: none; }
+  .menu--item {
+    font-size: 1.4rem;
+    color: #555555; }

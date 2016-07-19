@@ -96,14 +96,18 @@
 				top: 32%
 
 	.icon
-		&--circle
+		&__circle
 			width: 11rem
 			height: 8.1rem
 
-		&--instagram
+		&__instagram
 			background-size: 85%
 			left: .35rem
 			bottom: .2rem
+
+			&:after
+				top: 2.1rem
+				left: 1.7rem
 
 			&:hover
 				&:after
@@ -111,8 +115,8 @@
 					left: 1.7rem
 
 				&:before
-					top: 6px
-					right: 13px
+					top: 2.1rem
+					right: 1.9rem
 
 				.lens
 					top: 18px
@@ -125,12 +129,12 @@
 					&:after
 						left: -4px
 
-		&--hearth
+		&__hearth
 			background-size: 89%
 			margin: .3rem auto
 			left: .7rem
 
-		&--prize
+		&__prize
 			background: url(../img/prize.png) no-repeat .3rem top
 			background-size: 84%
 			left: .2rem
@@ -167,7 +171,7 @@
 			top: 2.25rem
 			right: .2rem
 
-		&--youtube-footer
+		&__youtube-footer
 			width: 3.3rem
 			height: 3.3rem
 			bottom: .7rem 
@@ -247,7 +251,7 @@
 		width: 9rem
 		padding: 3.55rem 0 2rem
 
-		&--planet
+		&__planet
 			&:before
 				top: 26%
 				left: 23%
@@ -308,22 +312,22 @@
 		font-size: 2.9rem
 
 	.icon
-		&--circle
+		&__circle
 			width: 10rem
 			height: 7.1rem
 
-		&--instagram
+		&__instagram
 			&:hover
 				&:before
 					top: 7px
 					right: 14px
 
-		&--hearth
+		&__hearth
 			background-size: 86%
 			margin: 0 auto
 			left: .5rem
 
-		&--prize
+		&__prize
 			background-size: 74%
 			left: .5rem
 
@@ -408,7 +412,7 @@
 			bottom: 3%
 
 	.button
-		&--red
+		&__red
 			bottom: 7%
 		&--fourth
 			bottom: 2.3%
@@ -419,15 +423,21 @@
 		&--right
 			width: 36.5rem
 
+@media screen and (max-width: 1060px) and (min-width: 1024px)
+	.about
+		&--layout
+			padding: 0 0 8.5% 47%
+
 @media screen and (max-width: 1024px)
 	html
 		font-size: 8px
 
-	.header-layout
-		width: 11rem
+	.header
+		&--layout
+			width: 11rem
 
-	.header-logo
-		padding: 2.4rem 0 0 .5rem
+		&--menu
+			padding: 2.4rem 0 0 .5rem
 
 	.wrapper
 		&--layout
@@ -435,6 +445,7 @@
 
 	.content-layout
 		height: 59rem
+
 		&--first
 			height: 49.4rem
 
@@ -449,17 +460,17 @@
 		height: 100%
 		margin: 0 auto
 
-		&--box,
-		&--insta,
-		&--map
+		&__box,
+		&__insta,
+		&__map
 			width: 52%
 			height: 100%
 
-		&--box
+		&__box
 			background-position-x: 0
 			background-position-y: -.4rem
 
-		&--map
+		&__map
 			width: 6.5rem
 			background-position-x: 0
 			background-position-y: 0
@@ -472,7 +483,7 @@
 		height: 35rem
 
 	.social
-		&--planet
+		&__planet
 			&:before
 				background-size: 100%
 
@@ -533,7 +544,7 @@
 		width: 8rem
 		padding: 2.55rem 0 1rem
 
-		&--planet
+		&__planet
 			&:before
 				background-size: 96%
 				top: 20%
@@ -545,14 +556,21 @@
 			background-position-x: 75%
 
 	.icon
-		&--instagram
-			&:after
-				top: 2.1rem
-				left: 1.9rem
+		&__instagram
+			&:hover
+				&:after
+					top: 2.1rem
+					left: 1.9rem
 
 	.gallery
 		&--item
 			flex: 1 1 11rem
+
+@media screen and (max-width: 810px) and (min-width: 770px)
+	.about
+		&--layout
+			padding: 0 0 8.5% 40%
+			background-size: 40%
 
 @media screen and (max-width: 770px)
 	.about
@@ -565,13 +583,29 @@
 		&--item
 			flex: 1 1 10rem
 
-@media screen and (min-width: 681px) and (max-width: 1960px)
+@media screen and (min-width: 681px) and (max-width: 800px)
+	.location
+		height: 27rem
 
+@media screen and (min-width: 681px) and (max-width: 700px)
+	.title-middle
+		font-size: 2.5rem
+		padding: 0
+
+		&--layout
+			width: 22.5rem
+
+@media screen and (min-width: 681px) and (max-width: 1960px)
 	.menu
 		.animated
 			&--left,
 			&--right
 				animation: none
+
+	.icon
+		&__close,
+		&__menu
+			display: none !important
 
 @media screen and (max-width: 680px)
 	html
@@ -587,20 +621,20 @@
 	.menu
 		display: none
 
-	.menu-item
-		font-size: 2.4rem
-		display: inline-block
-		margin: 2% 15% 0 0
+		&--item
+			font-size: 2.4rem
+			display: inline-block
+			margin: 2% 15% 0 0
 
-	.menu-item-layout
-		background-color: #f6f6f6
-		border-top: 1px solid #ddd
+		&--item-layout
+			background-color: #f6f6f6
+			border-top: 1px solid #ddd
 
-		&:last-of-type
-			display: block
-			background-color: #f0eded
+			&:last-of-type
+				display: block
+				background-color: #f0eded
 
-	.close-item
+	.close--item
 		color: #8e8d8d
 		text-shadow: 1px 2px 2px #fff
 		text-transform: uppercase
@@ -620,21 +654,22 @@
 		&:last-of-type
 			margin-top: -4rem
 
-	.header-layout
-		&__mobile
-			height: 10rem
-			width: 100%
-			padding: 3rem 0	
-			z-index: 3
+	.header
+		&--layout
+			&__mobile
+				height: 10rem
+				width: 100%
+				padding: 3rem 0	
+				z-index: 3
 
-	.header-logo
-		&__mobile
-			padding: 0 4rem
-			display: flex
-			flex-flow: row nowrap
-			justify-content: space-between
+		&--menu
+			&__mobile
+				padding: 0 4rem
+				display: flex
+				flex-flow: row nowrap
+				justify-content: space-between
 
-	.header-menu
+	.menu
 		margin: 0
 		top: 16rem
 
@@ -685,44 +720,48 @@
 			float: left
 			margin-left: 9%
 		
-		&--menu
+		&__menu
 			width: 10rem
 			height: 10rem
 			display: block
 
-		&--menu,
-		&--close		
+		&__menu,
+		&__close		
 			path
 				fill: #ef2a34
 
-		&--close
+		&__close
 			width: 10rem
 			height: 5rem
 			position: absolute
 			top: 3rem
 			right: 0
 
-		&--circle
+		&__circle
 			width: 13rem
 			height: 10rem
 
 		&--item
 			margin: 11% 0 0 0
 
-		&--hearth
+		&__hearth
 			top: 1.2rem
 			
-		&--hearth,
-		&--prize
+		&__hearth,
+		&__prize
 			left: 0
 			background-size: 95%
 
-		&--prize
+		&__prize
 			top: 0
 
-		&--instagram
+		&__instagram
 			background-size: 96%
 			top: 4px
+
+			&:after
+				top: 2.5rem
+				left: 2.1rem
 
 			&:hover
 				&:before
@@ -730,8 +769,8 @@
 					right: 10px
 				
 				&:after
-					top: 2.6rem
-					left: 2.2rem
+					top: 2.5rem
+					left: 2.1rem
 				
 				.lens 
 					top: 23px 
@@ -769,23 +808,23 @@
 			right: 0
 			top: 2.3rem
 
-		&--youtube-footer
+		&__youtube-footer
 			bottom: 0
 
-		&--vk-footer
+		&__vk-footer
 			width: 3rem
 			height: 3rem
 			bottom: 0
 			right: 4px
 
-		&--facebook-footer
+		&__facebook-footer
 			width: 2.6rem
 			height: 2.6rem
 			top: 5px
 			right: 1px
 
 	.animation
-		&--circle
+		&__circle
 			top: .4rem
 			left: .1rem
 
@@ -877,7 +916,7 @@
 		left: 56%
 		bottom: 18.8%
 
-		&--red
+		&__red
 			left: 33%
 			bottom: 15.3%
 
@@ -953,20 +992,16 @@
 		width: 9rem
 		padding: 2.55rem 0 2.5rem
 
-		&--youtube
+		&__youtube
 			width: 8.9rem
 
-		&--planet
+		&__planet
 			&:before
 				background-size: 103%
 
 @media screen and (max-width: 590px)
 	html 
 		font-size: 8px
-
-	.content-layout
-		&--first
-			//margin-bottom: -12px
 
 	.main-slide
 		height: 76.5%
@@ -1104,7 +1139,6 @@
 			flex: 1 1 22rem
 
 @media screen and (min-width: 320px) and (max-width: 455px)
-
 	.column
 		background-size: cover
 
@@ -1126,7 +1160,7 @@
 		&__mobile
 			background-size: 60%
 
-		&--instagram
+		&__instagram
 			&:after
 				top: 10px
 				left: 9px
